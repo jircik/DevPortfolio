@@ -32,8 +32,8 @@ const education = [
                  Atualmente, estou em busca da minha primeira oportunidade de emprego.
                </p>
                <p className="text-muted-foreground leading-relaxed">
-                 Meu foco principal hoje está no ecossistema Java com Spring Boot para o desenvolvimento de API e,
-                 recentemente, tenho buscado expandir meu repertório para o ecossistema JavaScript e seus frameworks, visando expandir meus conhecimentos tanto na area de Back-end quanto na area de Front-end para criar interfaces para as aplicações que desenvolvo.
+                 Meu foco principal hoje está no ecossistema Java com Spring Boot para o desenvolvimento de APIs e,
+                 recentemente, tenho buscado expandir meu repertório para o ecossistema JavaScript e seus frameworks, visando expandir meus conhecimentos tanto na area de Back-end, quanto na area de Front-end para criar interfaces para as aplicações que desenvolvo.
                  Além do desenvolvimento tradicional, tenho explorado a criação de automações com n8n, integrando diferentes ferramentas para otimizar fluxos de trabalho e criar soluções mais eficientes.
                </p>
                <p className="text-muted-foreground leading-relaxed">
