@@ -78,7 +78,7 @@ const projects = [
         "Chatbot para Discord que utiliza modelos de IA via Ollama. Desenvolvido em JavaScript e estruturado com Docker.",
     tech: ["JavaScript", "Docker", "Node.js", "Git"],
     github: "https://github.com/jircik/DiscordChatBot",
-    live: null,
+    live: "https://discord.com/oauth2/authorize?client_id=1474823195235451042&permissions=8&integration_type=0&scope=bot",
   },
 ]
 
