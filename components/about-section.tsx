@@ -33,11 +33,11 @@ const education = [
                </p>
                <p className="text-muted-foreground leading-relaxed">
                  Meu foco principal hoje está no ecossistema Java com Spring Boot para o desenvolvimento de API e,
-                 recentemente, tenho buscado expandir meu repertório para o ecossistema JavaScript e seus frameworks, visando construir interfaces modernas e intuitivas para as aplicações que desenvolvo.
+                 recentemente, tenho buscado expandir meu repertório para o ecossistema JavaScript e seus frameworks, visando expandir meus conhecimentos tanto na area de Back-end quanto na area de Front-end para criar interfaces para as aplicações que desenvolvo.
                  Além do desenvolvimento tradicional, tenho explorado a criação de automações com n8n, integrando diferentes ferramentas para otimizar fluxos de trabalho e criar soluções mais eficientes.
                </p>
                <p className="text-muted-foreground leading-relaxed">
-                 Estou ansioso para aplicar meu conhecimento em um ambiente profissional onde eu possa contribuir com meus conhecimentos e evoluir como desenvolvedor Full-Stack.
+                 Estou ansioso para aplicar meu conhecimento em um ambiente profissional onde eu possa contribuir com meus conhecimentos e evoluir como desenvolvedor Back-end.
                </p>
              </div>
 

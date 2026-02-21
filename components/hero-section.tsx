@@ -11,7 +11,7 @@ export function HeroSection() {
           ARTHUR JIRCIK
         </h1>
         <p className="text-lg text-muted-foreground md:text-xl">
-          Engenheiro de Software Full-Stack
+          Engenheiro de Software Back-end
         </p>
         <p className="text-lg text-muted-foreground md:text-xl">
           São Paulo, Brasil
