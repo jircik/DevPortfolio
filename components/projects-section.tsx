@@ -9,6 +9,7 @@ const technologies = [
   "JavaScript",
   "TypeScript",
   "React",
+  "Next.js",
   "Node.js",
   "Html",
   "Css",
@@ -67,8 +68,16 @@ const projects = [
     title: "Portfolio Website",
     description:
         "Este site Portifolio",
-    tech: ["TypeScript", "React", "Node.js", "Tailwind Css", "Git"],
+    tech: ["TypeScript", "JavaScript", "React", "Next.js", "Node.js", "Tailwind Css", "Git"],
     github: "https://github.com/jircik/Portfolio-website",
+    live: null,
+  },
+  {
+    title: "Discord GPT ChatBot",
+    description:
+        "Chatbot para Discord que utiliza modelos de IA via Ollama. Desenvolvido em JavaScript e estruturado com Docker.",
+    tech: ["JavaScript", "Docker", "Node.js", "Git"],
+    github: "https://github.com/jircik/DiscordChatBot",
     live: null,
   },
 ]
