@@ -8,7 +8,7 @@ export function HeroSection() {
     >
       <div className="flex flex-col items-center gap-4 text-center">
         <h1 className="text-5xl font-bold tracking-tight text-foreground md:text-7xl text-balance">
-          Arthur Jircik
+          ARTHUR JIRCIK
         </h1>
         <p className="text-lg text-muted-foreground md:text-xl">
           Engenheiro de Software Full-Stack
