@@ -5,11 +5,12 @@ import { ExternalLink, Github } from "lucide-react"
 
 const technologies = [
   "Java",
-  "Spring",
+  "SpringBoot",
   "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
+  "Nest.js",
   "Node.js",
   "Html",
   "Css",
@@ -25,10 +26,18 @@ const technologies = [
 
 const projects = [
   {
+    title: "CryptoExchange API",
+    description:
+        "API construída com NestJS para consultar valores de criptomoedas em tempo real via CoinGecko. O projeto está funcional, com novas funcionalidades planejadas para futuras versões.",
+    tech: ["TypeScript", "JavaScript", "Nest.js", "Git"],
+    github: "https://github.com/jircik/CryptoExchange-API",
+    live: null,
+  },
+  {
     title: "API CRUD com Java, Spring Boot e PostgreSQL",
     description:
         "API REST para gerenciamento de usuários. Utiliza Spring Boot, Spring Data JPA e Docker/PostgreSQL.",
-    tech: ["Java", "Spring", "SQL", "Git"],
+    tech: ["Java", "SpringBoot", "SQL","Docker", "Git"],
     github: "https://github.com/jircik/API-Spring-Boot-Gerenciamento-de-Usuarios",
     live: null,
   },
