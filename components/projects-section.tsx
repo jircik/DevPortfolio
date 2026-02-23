@@ -93,95 +93,115 @@ const projects = [
 
 export function ProjectsSection() {
   const [activeTech, setActiveTech] = useState<string | null>(null)
+  const [displayedCount, setDisplayedCount] = useState(6)
 
   const filteredProjects = activeTech
-    ? projects.filter((p) => p.tech.includes(activeTech))
-    : projects
+      ? projects.filter((p) => p.tech.includes(activeTech))
+      : projects
+
+  const visibleProjects = filteredProjects.slice(0, displayedCount)
+  const hasMoreProjects = displayedCount < filteredProjects.length
+
+  const handleLoadMore = () => {
+    setDisplayedCount((prev) => prev + 2)
+  }
 
   return (
-    <section id="projects" className="py-24 px-6">
-      <div className="mx-auto max-w-5xl">
-        <h2 className="text-center text-3xl font-bold text-foreground md:text-4xl">
-          Projetos
-        </h2>
+      <section id="projects" className="py-24 px-6">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-center text-3xl font-bold text-foreground md:text-4xl">
+            Projects
+          </h2>
 
-        {/* Tech stack bar */}
-        <div className="mt-4 mb-12">
-          <p className="text-center text-sm font-mono uppercase tracking-widest text-accent mb-4">
-            Minha tech stack
-          </p>
-          <div className="flex flex-wrap justify-center gap-2">
-            {technologies.map((tech) => (
-              <button
-                key={tech}
-                onClick={() =>
-                  setActiveTech(activeTech === tech ? null : tech)
-                }
-                className={`rounded-md border px-3 py-1.5 font-mono text-xs transition-all ${
-                  activeTech === tech
-                    ? "border-accent bg-accent/10 text-accent"
-                    : "border-border bg-secondary text-muted-foreground hover:border-accent/50 hover:text-foreground"
-                }`}
-              >
-                {tech}
-              </button>
-            ))}
+          {/* Tech stack bar */}
+          <div className="mt-4 mb-12">
+            <p className="text-center text-sm font-mono uppercase tracking-widest text-accent mb-4">
+              My tech stack
+            </p>
+            <div className="flex flex-wrap justify-center gap-2">
+              {technologies.map((tech) => (
+                  <button
+                      key={tech}
+                      onClick={() =>
+                          setActiveTech(activeTech === tech ? null : tech)
+                      }
+                      className={`rounded-md border px-3 py-1.5 font-mono text-xs transition-all ${
+                          activeTech === tech
+                              ? "border-accent bg-accent/10 text-accent"
+                              : "border-border bg-secondary text-muted-foreground hover:border-accent/50 hover:text-foreground"
+                      }`}
+                  >
+                    {tech}
+                  </button>
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* Project cards grid */}
-        <div className="grid gap-6 md:grid-cols-2">
-          {filteredProjects.map((project) => (
-            <div
-              key={project.title}
-              className="group rounded-lg border border-border bg-card p-6 transition-all hover:border-accent/40"
-            >
-              <div className="flex items-start justify-between">
-                <h3 className="text-lg font-semibold text-foreground">
-                  {project.title}
-                </h3>
-                <div className="flex items-center gap-3">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`GitHub repository for ${project.title}`}
-                    className="text-muted-foreground hover:text-accent transition-colors"
-                  >
-                    <Github size={16} />
-                  </a>
-                  {project.live && (
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Live demo for ${project.title}`}
-                      className="text-muted-foreground hover:text-accent transition-colors"
-                    >
-                      <ExternalLink size={16} />
-                    </a>
-                  )}
-                </div>
-              </div>
+          {/* Project cards grid */}
+          <div className="grid gap-6 md:grid-cols-2">
+            {visibleProjects.map((project) => (
+                <div
+                    key={project.title}
+                    className="group rounded-lg border border-border bg-card p-6 transition-all hover:border-accent/40"
+                >
+                  <div className="flex items-start justify-between">
+                    <h3 className="text-lg font-semibold text-foreground">
+                      {project.title}
+                    </h3>
+                    <div className="flex items-center gap-3">
+                      <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`GitHub repository for ${project.title}`}
+                          className="text-muted-foreground hover:text-accent transition-colors"
+                      >
+                        <Github size={16} />
+                      </a>
+                      {project.live && (
+                          <a
+                              href={project.live}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label={`Live demo for ${project.title}`}
+                              className="text-muted-foreground hover:text-accent transition-colors"
+                          >
+                            <ExternalLink size={16} />
+                          </a>
+                      )}
+                    </div>
+                  </div>
 
-              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-                {project.description}
-              </p>
+                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                    {project.description}
+                  </p>
 
-              <div className="mt-4 flex flex-wrap gap-2">
-                {project.tech.map((t) => (
-                  <span
-                    key={t}
-                    className="rounded-full border border-border bg-secondary px-2.5 py-0.5 font-mono text-[10px] text-muted-foreground"
-                  >
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {project.tech.map((t) => (
+                        <span
+                            key={t}
+                            className="rounded-full border border-border bg-secondary px-2.5 py-0.5 font-mono text-[10px] text-muted-foreground"
+                        >
                     {t}
                   </span>
-                ))}
+                    ))}
+                  </div>
+                </div>
+            ))}
+          </div>
+
+          {/* Load More Button */}
+          {hasMoreProjects && (
+              <div className="mt-12 flex justify-center">
+                <button
+                    onClick={handleLoadMore}
+                    className="rounded-md border border-accent bg-accent/10 px-6 py-2 font-mono text-sm text-accent transition-all hover:bg-accent/20 hover:shadow-md hover:shadow-accent/20"
+                >
+                  Load More Projects
+                </button>
               </div>
-            </div>
-          ))}
+          )}
         </div>
-      </div>
-    </section>
+      </section>
   )
 }
