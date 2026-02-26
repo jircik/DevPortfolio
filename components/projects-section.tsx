@@ -11,7 +11,6 @@ const technologies = [
   "React",
   "Next.js",
   "Nest.js",
-  "Node.js",
   "Html",
   "Css",
   "Tailwind Css",
@@ -42,6 +41,14 @@ const projects = [
     live: null,
   },
   {
+    title: "Discord GPT ChatBot",
+    description:
+        "Chatbot para Discord que utiliza modelos de IA via Ollama. Desenvolvido em JavaScript e estruturado com Docker.",
+    tech: ["JavaScript", "Docker", "Git"],
+    github: "https://github.com/jircik/DiscordChatBot",
+    live: "https://discord.com/oauth2/authorize?client_id=1474823195235451042&permissions=8&integration_type=0&scope=bot",
+  },
+  {
     title: "Todo-list App",
     description:
         "Gerenciador de tarefas desenvolvido com JavaScript, HTML e CSS, focado em uma experiência de usuário fluida e visual moderno.",
@@ -50,19 +57,19 @@ const projects = [
     live: "https://jircik-todo-list.netlify.app",
   },
   {
-    title: "Conversor de Bases Numéricas",
-    description:
-        "Este projeto desenvolvido em Python realiza a conversão de números entre diferentes bases (binário, octal, decimal hexadecimal) e utiliza um banco de dados SQL para armazenar conversões já calculadas.",
-    tech: ["Python", "SQL", "Git"],
-    github: "https://github.com/jircik/Conversor-de-bases-numericas",
-    live: null,
-  },
-  {
     title: "Codificador de Imagens Binárias",
     description:
         "Desenvolvido em C com execução via terminal, este projeto utiliza imagens binarias (PBM),aplicando recursivamente a divisão entre quadrantes para codificar a imagem em uma unica linha de texto.",
     tech: ["C", "Git"],
     github: "https://github.com/jircik/Codificador-de-Imagens-Binarias-C",
+    live: null,
+  },
+  {
+    title: "Conversor de Bases Numéricas",
+    description:
+        "Este projeto desenvolvido em Python realiza a conversão de números entre diferentes bases (binário, octal, decimal hexadecimal) e utiliza um banco de dados SQL para armazenar conversões já calculadas.",
+    tech: ["Python", "SQL", "Git"],
+    github: "https://github.com/jircik/Conversor-de-bases-numericas",
     live: null,
   },
   {
@@ -77,17 +84,9 @@ const projects = [
     title: "Portfolio Website",
     description:
         "Este site Portifolio",
-    tech: ["TypeScript", "JavaScript", "React", "Next.js", "Node.js", "Tailwind Css", "Git"],
+    tech: ["TypeScript", "JavaScript", "React", "Next.js", "Tailwind Css", "Git"],
     github: "https://github.com/jircik/Portfolio-website",
     live: null,
-  },
-  {
-    title: "Discord GPT ChatBot",
-    description:
-        "Chatbot para Discord que utiliza modelos de IA via Ollama. Desenvolvido em JavaScript e estruturado com Docker.",
-    tech: ["JavaScript", "Docker", "Node.js", "Git"],
-    github: "https://github.com/jircik/DiscordChatBot",
-    live: "https://discord.com/oauth2/authorize?client_id=1474823195235451042&permissions=8&integration_type=0&scope=bot",
   },
 ]
 

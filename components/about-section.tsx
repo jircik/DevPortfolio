@@ -27,14 +27,14 @@ const education = [
              {/* Bio text */}
              <div className="space-y-4">
                <p className="text-muted-foreground leading-relaxed">
-                 Sou estudante de Engenharia de Software com um grande interesse por desenvolvimento Full-Stack.
+                 Sou estudante de Engenharia de Software com um grande interesse por desenvolvimento Back-End.
                  Em 2025, cursei o primeiro ano de Ciência da Computação, porém decidi mudar para Engenharia de Software por me identificar mais com o curso.
                  Atualmente, estou em busca da minha primeira oportunidade de emprego.
                </p>
                <p className="text-muted-foreground leading-relaxed">
                  Meu foco principal hoje está no ecossistema Java com Spring Boot para o desenvolvimento de APIs e,
                  recentemente, tenho buscado expandir meu repertório para o ecossistema JavaScript e seus frameworks, visando expandir meus conhecimentos tanto na area de Back-end, quanto na area de Front-end para criar interfaces para as aplicações que desenvolvo.
-                 Além do desenvolvimento tradicional, tenho explorado a criação de automações com n8n, integrando diferentes ferramentas para otimizar fluxos de trabalho e criar soluções mais eficientes.
+                 Além do desenvolvimento tradicional, tenho explorado a criação de fluxos e automações com n8n.
                </p>
                <p className="text-muted-foreground leading-relaxed">
                  Estou ansioso para aplicar meu conhecimento em um ambiente profissional onde eu possa contribuir com meus conhecimentos e evoluir como desenvolvedor Back-end.
