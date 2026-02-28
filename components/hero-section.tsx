@@ -34,7 +34,7 @@ export function HeroSection() {
       {/* Social icons at the bottom */}
       <div className="absolute bottom-12 flex items-center gap-6">
         <a
-          href="https://www.linkedin.com/in/arthur-jircik-a8715b356/"
+          href="https://www.linkedin.com/in/arthur-jircik/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"

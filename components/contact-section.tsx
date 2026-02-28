@@ -38,7 +38,7 @@ export function ContactSection() {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Hidden config */}
             <input type="hidden" name="_subject" value="Nova mensagem do Portfolio!" />
-            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_captcha" value="true" />
 
             <div className="grid gap-6 md:grid-cols-2">
               <div>
