@@ -16,7 +16,7 @@ const technologies = [
   "Tailwind Css",
   "C",
   "Python",
-  "SQL",
+  "PostgreSQL",
   "MongoDB",
   "Docker",
   "Git",
@@ -33,11 +33,11 @@ const projects = [
     live: null,
   },
   {
-    title: "API CRUD com Java, Spring Boot e PostgreSQL",
+    title: "CalorieTracker API",
     description:
-        "API REST para gerenciamento de usuários. Utiliza Spring Boot, Spring Data JPA e Docker/PostgreSQL.",
-    tech: ["Java", "SpringBoot", "SQL","Docker", "Git"],
-    github: "https://github.com/jircik/API-Spring-Boot-Gerenciamento-de-Usuarios",
+        "API Back-end Desenvolvida em Spring Boot com banco em PostgreSQL conteinerizado com Docker, usada para calcular calorias e macronutrientes de uma refeição criada pelo usuário por meio da API externa FatSecret ",
+    tech: ["Java", "SpringBoot", "PostgreSQL", "Docker", "Git"],
+    github: "https://github.com/jircik/CalorieTrackerAPI",
     live: null,
   },
   {
@@ -49,12 +49,12 @@ const projects = [
     live: "https://discord.com/oauth2/authorize?client_id=1474823195235451042&permissions=8&integration_type=0&scope=bot",
   },
   {
-    title: "Todo-list App",
+    title: "API CRUD com Java, Spring Boot e PostgreSQL",
     description:
-        "Gerenciador de tarefas desenvolvido com JavaScript, HTML e CSS, focado em uma experiência de usuário fluida e visual moderno.",
-    tech: ["JavaScript","Html", "Css", "Git"],
-    github: "https://github.com/jircik/Todo-List-App",
-    live: "https://jircik-todo-list.netlify.app",
+        "API REST para gerenciamento de usuários. Utiliza Spring Boot, Spring Data JPA e Docker/PostgreSQL.",
+    tech: ["Java", "SpringBoot", "PostgreSQL","Docker", "Git"],
+    github: "https://github.com/jircik/API-Spring-Boot-Gerenciamento-de-Usuarios",
+    live: null,
   },
   {
     title: "Codificador de Imagens Binárias",
@@ -65,10 +65,18 @@ const projects = [
     live: null,
   },
   {
+    title: "Todo-list App",
+    description:
+        "Gerenciador de tarefas desenvolvido com JavaScript, HTML e CSS, focado em uma experiência de usuário fluida e visual moderno.",
+    tech: ["JavaScript","Html", "Css", "Git"],
+    github: "https://github.com/jircik/Todo-List-App",
+    live: "https://jircik-todo-list.netlify.app",
+  },
+  {
     title: "Conversor de Bases Numéricas",
     description:
         "Este projeto desenvolvido em Python realiza a conversão de números entre diferentes bases (binário, octal, decimal hexadecimal) e utiliza um banco de dados SQL para armazenar conversões já calculadas.",
-    tech: ["Python", "SQL", "Git"],
+    tech: ["Python", "PostgreSQL", "Git"],
     github: "https://github.com/jircik/Conversor-de-bases-numericas",
     live: null,
   },
@@ -78,14 +86,6 @@ const projects = [
         "Jogo da velha simples feito em Java que roda no terminal.",
     tech: ["Java", "Git"],
     github: "https://github.com/jircik/Jogo-da-velha-Java",
-    live: null,
-  },
-  {
-    title: "Portfolio Website",
-    description:
-        "Este site Portifolio",
-    tech: ["TypeScript", "JavaScript", "React", "Next.js", "Tailwind Css", "Git"],
-    github: "https://github.com/jircik/Portfolio-website",
     live: null,
   },
 ]
