@@ -43,7 +43,7 @@ const projects = [
   {
     title: "Discord GPT ChatBot",
     description:
-        "Chatbot para Discord que utiliza modelos de IA via Ollama. Desenvolvido em JavaScript e estruturado com Docker.",
+        "Chatbot para Discord que utiliza modelos de IA via groq API. Desenvolvido em JavaScript e estruturado com Docker. Projeto hospedado em nuvem para qualquer pessoa poder adicionar o bot em seu servidor proprio",
     tech: ["JavaScript", "Docker", "Git"],
     github: "https://github.com/jircik/DiscordChatBot",
     live: "https://discord.com/oauth2/authorize?client_id=1474823195235451042&permissions=8&integration_type=0&scope=bot",
