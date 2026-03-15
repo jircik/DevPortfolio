@@ -25,19 +25,19 @@ const technologies = [
 
 const projects = [
   {
+    title: "CalorieTracker API",
+    description:
+        "API Back-end Desenvolvida em Spring Boot com PostgreSQL, usada para calcular calorias e macronutrientes de uma refeição criada pelo usuário por meio da API externa FatSecret ",
+    tech: ["Java", "SpringBoot", "PostgreSQL", "Docker", "Git"],
+    github: "https://github.com/jircik/CalorieTrackerAPI",
+    live: null,
+  },
+  {
     title: "CryptoExchange API",
     description:
         "API construída com NestJS para consultar valores de criptomoedas em tempo real via CoinGecko. O projeto está funcional, com novas funcionalidades planejadas para futuras versões.",
     tech: ["TypeScript", "JavaScript", "Nest.js", "Git"],
     github: "https://github.com/jircik/CryptoExchange-API",
-    live: null,
-  },
-  {
-    title: "CalorieTracker API",
-    description:
-        "API Back-end Desenvolvida em Spring Boot com banco em PostgreSQL conteinerizado com Docker, usada para calcular calorias e macronutrientes de uma refeição criada pelo usuário por meio da API externa FatSecret ",
-    tech: ["Java", "SpringBoot", "PostgreSQL", "Docker", "Git"],
-    github: "https://github.com/jircik/CalorieTrackerAPI",
     live: null,
   },
   {
@@ -109,13 +109,13 @@ export function ProjectsSection() {
       <section id="projects" className="py-24 px-6">
         <div className="mx-auto max-w-5xl">
           <h2 className="text-center text-3xl font-bold text-foreground md:text-4xl">
-            Projects
+            Projetos
           </h2>
 
           {/* Tech stack bar */}
           <div className="mt-4 mb-12">
             <p className="text-center text-sm font-mono uppercase tracking-widest text-accent mb-4">
-              My tech stack
+              Minha tech stack
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {technologies.map((tech) => (
