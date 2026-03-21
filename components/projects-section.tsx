@@ -38,7 +38,7 @@ const projects = [
         "Service de encurtamento de URLs desenvolvida em Node.js com Express e MongoDB, permitindo a criação de links personalizados, redirecionamento dinâmico com contagem de acessos e gestão de status (Ativo/Inativo) dos registros.",
     tech: ["Java", "SpringBoot", "PostgreSQL", "Docker", "Git"],
     github: "https://github.com/jircik/CalorieTrackerAPI",
-    live: null,
+    live: "https://url-shortening-service-production-b381.up.railway.app/api-docs/",
   },
   {
     title: "CryptoExchange API",
