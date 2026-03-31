@@ -8,7 +8,9 @@ const technologies = [
   "SpringBoot",
   "JavaScript",
   "TypeScript",
+  "Node.js",
   "React",
+  "Express.js",
   "Next.js",
   "Nest.js",
   "Html",
@@ -35,10 +37,10 @@ const projects = [
   {
     title: "URL Shortening Service",
     description:
-        "Service de encurtamento de URLs desenvolvida em Node.js com Express e MongoDB, permitindo a criação de links personalizados, redirecionamento dinâmico com contagem de acessos e gestão de status (Ativo/Inativo) dos registros.",
-    tech: ["Java", "SpringBoot", "PostgreSQL", "Docker", "Git"],
-    github: "https://github.com/jircik/CalorieTrackerAPI",
-    live: "https://url-shortening-service-production-b381.up.railway.app/api-docs/",
+        "Full-stack URL shortening service built with Express.js, MongoDB, and Next.js. Features JWT authentication, custom shortcodes, configurable link expiration, access tracking, and user dashboard for managing URLs.",
+    tech: ["JavaScript", "TypeScript", "Node.js", "Express.js", "Next.js","MongoDb", "Git"],
+    github: "https://github.com/jircik/URL-Shortening-Service",
+    live: "https://url-app.jircik.dev/",
   },
   {
     title: "CryptoExchange API",
@@ -86,14 +88,6 @@ const projects = [
         "Este projeto desenvolvido em Python realiza a conversão de números entre diferentes bases (binário, octal, decimal hexadecimal) e utiliza um banco de dados SQL para armazenar conversões já calculadas.",
     tech: ["Python", "PostgreSQL", "Git"],
     github: "https://github.com/jircik/Conversor-de-bases-numericas",
-    live: null,
-  },
-  {
-    title: "Jogo da velha",
-    description:
-        "Jogo da velha simples feito em Java que roda no terminal.",
-    tech: ["Java", "Git"],
-    github: "https://github.com/jircik/Jogo-da-velha-Java",
     live: null,
   },
 ]
