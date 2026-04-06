@@ -37,7 +37,7 @@ const projects = [
   {
     title: "URL Shortening Service",
     description:
-        "Full-stack URL shortening service built with Express.js, MongoDB, and Next.js. Features JWT authentication, custom shortcodes, configurable link expiration, access tracking, and user dashboard for managing URLs.",
+        "Aplicação Full-Stack de encurtamento de URLs desenvolvido com Express.js, MongoDB e Next.js. Oferece autenticação JWT, shortcodes personalizados, expiração de links configurável, contagem de acessos e painel de controle para gerenciamento de URLs.",
     tech: ["JavaScript", "TypeScript", "Node.js", "Express.js", "Next.js","MongoDb", "Git"],
     github: "https://github.com/jircik/URL-Shortening-Service",
     live: "https://url-app.jircik.dev/",
@@ -89,7 +89,7 @@ const projects = [
     tech: ["Python", "PostgreSQL", "Git"],
     github: "https://github.com/jircik/Conversor-de-bases-numericas",
     live: null,
-  },
+  }
 ]
 
 export function ProjectsSection() {
@@ -198,7 +198,7 @@ export function ProjectsSection() {
                     onClick={handleLoadMore}
                     className="rounded-md border border-accent bg-accent/10 px-6 py-2 font-mono text-sm text-accent transition-all hover:bg-accent/20 hover:shadow-md hover:shadow-accent/20"
                 >
-                  Load More Projects
+                  Mostrar Mais
                 </button>
               </div>
           )}
