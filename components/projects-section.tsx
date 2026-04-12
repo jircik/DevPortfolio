@@ -37,10 +37,18 @@ const projects = [
   {
     title: "URL Shortening Service",
     description:
-        "Aplicação Full-Stack de encurtamento de URLs desenvolvido com Express.js, MongoDB e Next.js. Oferece autenticação JWT, shortcodes personalizados, expiração de links configurável, contagem de acessos e painel de controle para gerenciamento de URLs.",
+        "Aplicação Full-Stack de encurtamento de URLs desenvolvido com Express.js, MongoDB e Next.js. Oferece autenticação JWT, shortcodes personalizados, expiração de links configurável, contagem de acessos e dashboard para controle de URLs.",
     tech: ["JavaScript", "TypeScript", "Node.js", "Express.js", "Next.js","MongoDb", "Git"],
     github: "https://github.com/jircik/URL-Shortening-Service",
     live: "https://url-app.jircik.dev/",
+  },
+  {
+    title: "Datagen CLI tool",
+    description:
+        "CLI tool para popular bancos de dados com dados falsos e realistas, desenvolvida com Node.js, TypeScript e Faker.js. Suporta PostgreSQL e MongoDB. Conta com um plugin oficial para o Claude Code com skills especializadas para uso da ferramenta.",
+    tech: ["TypeScript", "Node.js", "Git"],
+    github: "https://github.com/jircik/DataGen-Cli-Tool",
+    live: null,
   },
   {
     title: "CryptoExchange API",
@@ -57,14 +65,6 @@ const projects = [
     tech: ["JavaScript", "Docker", "Git"],
     github: "https://github.com/jircik/DiscordChatBot",
     live: "https://discord.com/oauth2/authorize?client_id=1474823195235451042&permissions=8&integration_type=0&scope=bot",
-  },
-  {
-    title: "API CRUD com Java, Spring Boot e PostgreSQL",
-    description:
-        "API REST para gerenciamento de usuários. Utiliza Spring Boot, Spring Data JPA e Docker/PostgreSQL.",
-    tech: ["Java", "SpringBoot", "PostgreSQL","Docker", "Git"],
-    github: "https://github.com/jircik/API-Spring-Boot-Gerenciamento-de-Usuarios",
-    live: null,
   },
   {
     title: "Codificador de Imagens Binárias",
