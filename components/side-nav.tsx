@@ -43,6 +43,9 @@ export function SideNav() {
 
   return (
     <nav className="fixed left-0 top-0 z-50 h-screen w-16 md:w-20 hidden md:flex flex-col justify-center border-r border-border/30 bg-background/80 backdrop-blur-sm">
+      <div className="absolute top-6 left-0 w-full flex justify-center">
+        <img src="/icon.svg" alt="Logo" className="w-10 h-10" />
+      </div>
       <div className="flex flex-col gap-6 px-4">
         {navItems.map(({ id, label }) => (
           <button key={id} onClick={() => scrollToSection(id)} className="group relative flex items-center gap-3">

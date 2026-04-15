@@ -1,8 +1,8 @@
 import { HeroSection } from "@/components/hero-section"
-import { SignalsSection } from "@/components/signals-section"
-import { WorkSection } from "@/components/work-section"
-import { PrinciplesSection } from "@/components/principles-section"
-import { ColophonSection } from "@/components/colophon-section"
+import { StackSection } from "@/components/stack-section"
+import { ProjectsSection } from "@/components/projects-section"
+import { AboutSection } from "@/components/about-section"
+import { FooterSection } from "@/components/footer-section"
 import { SideNav } from "@/components/side-nav"
 
 export default function Page() {
@@ -13,10 +13,10 @@ export default function Page() {
 
       <div className="relative z-10">
         <HeroSection />
-        <SignalsSection />
-        <WorkSection />
-        <PrinciplesSection />
-        <ColophonSection />
+        <StackSection />
+        <ProjectsSection />
+        <AboutSection />
+        <FooterSection />
       </div>
     </main>
   )

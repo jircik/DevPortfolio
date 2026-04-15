@@ -85,7 +85,7 @@ const experiments = [
   },
 ]
 
-export function WorkSection() {
+export function ProjectsSection() {
   const sectionRef = useRef<HTMLElement>(null)
   const headerRef = useRef<HTMLDivElement>(null)
   const listRef = useRef<HTMLDivElement>(null)
