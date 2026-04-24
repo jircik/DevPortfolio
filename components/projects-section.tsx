@@ -18,7 +18,7 @@ const experiments = [
       "API Back-end Desenvolvida em Spring Boot com PostgreSQL, usada para calcular calorias e macronutrientes de uma refeição criada pelo usuário por meio da API externa FatSecret.",
     span: "col-span-2 row-span-2",
     github: "https://github.com/jircik/CalorieTrackerAPI",
-    live: null,
+    live: "https://calorietracker-api.jircik.dev/swagger-ui/index.html",
   },
   {
     title: "URL Shortening Service",
@@ -28,6 +28,15 @@ const experiments = [
     span: "col-span-1 row-span-1",
     github: "https://github.com/jircik/URL-Shortening-Service",
     live: "https://url-app.jircik.dev/",
+  },
+  {
+    title: "DataBase Backup CLI",
+    medium: "Backend",
+    description:
+        "Ferramenta CLI para backup e restore automatizado de bancos de dados. Desenvolvida com Java 21, Spring Boot, Spring Shell e Spring Batch. Suporte a PostgreSQL e MySQL.",
+    span: "col-span-1 row-span-1",
+    github: "https://github.com/jircik/DB-Backup-CLI",
+    live: null,
   },
   {
     title: "Datagen CLI tool",
