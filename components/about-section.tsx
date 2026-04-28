@@ -28,7 +28,7 @@ export function AboutSection() {
         { text: "EDUCAÇAO", highlight: true },
         { text: "", highlight: false },
       ],
-      description: "Cursando Bacharelado em Engenharia de Software na FIAP, São Paulo — com previsão de formação em dezembro de 2029. Anteriormente (2025), completei um ano de Ciência da Computação na Universidade Mackenzie, onde construi uma base sólida em Lógica de Programação, Desenvolvimento em Python e C, Circuitos Elétricos e Eletrônicos e Análise de Dados.",
+      description: "Cursando Bacharelado em Engenharia de Software na FIAP, São Paulo — com previsão de formação em dezembro de 2029, Aprendendo no momento fundamentos de desenvolvimento web, design de front-end e gestão de experiência total do software, além de edge computing, storytelling e empreendedorismo. Anteriormente (2025), completei um ano de Ciência da Computação na Universidade Mackenzie, onde construi uma base sólida em Lógica de Programação, Desenvolvimento em Python e C, Circuitos Elétricos e Eletrônicos e Análise de Dados.",
       align: "right",
     },
   ]
