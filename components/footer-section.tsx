@@ -1,12 +1,14 @@
 "use client"
 
 import { useRef, useEffect } from "react"
+import { useLanguage } from "@/lib/i18n/language-context"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 gsap.registerPlugin(ScrollTrigger)
 
 export function FooterSection() {
+  const { t } = useLanguage()
   const sectionRef = useRef<HTMLElement>(null)
   const headerRef = useRef<HTMLDivElement>(null)
   const gridRef = useRef<HTMLDivElement>(null)
@@ -75,15 +77,15 @@ export function FooterSection() {
     >
       {/* Section header */}
       <div ref={headerRef} className="mb-16">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">04 / Connect</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">CONTATO</h2>
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">{t.footer.label}</span>
+        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">{t.footer.title}</h2>
       </div>
 
       {/* Multi-column layout */}
       <div ref={gridRef} className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 md:gap-12">
         {/* Email */}
         <div className="col-span-1">
-          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Email</h4>
+          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">{t.footer.email}</h4>
           <ul className="space-y-2">
             <li>
               <a
@@ -98,7 +100,7 @@ export function FooterSection() {
 
         {/* Social */}
         <div className="col-span-1">
-          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Social</h4>
+          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">{t.footer.social}</h4>
           <ul className="space-y-2">
             <li>
               <a
@@ -121,25 +123,25 @@ export function FooterSection() {
 
         {/* Location */}
         <div className="col-span-1">
-          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Location</h4>
+          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">{t.footer.location}</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">São Paulo</li>
-            <li className="font-mono text-xs text-foreground/80">Brasil</li>
+            <li className="font-mono text-xs text-foreground/80">{t.footer.locationCity}</li>
+            <li className="font-mono text-xs text-foreground/80">{t.footer.locationCountry}</li>
           </ul>
         </div>
 
         {/* Availability */}
         <div className="col-span-1">
-          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Status</h4>
+          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">{t.footer.status}</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">Disponibilidade</li>
-            <li className="font-mono text-xs text-accent">Disponivel agora</li>
+            <li className="font-mono text-xs text-foreground/80">{t.footer.availability}</li>
+            <li className="font-mono text-xs text-accent">{t.footer.available}</li>
           </ul>
         </div>
 
         {/* Year */}
         <div className="col-span-1">
-          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Updated</h4>
+          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">{t.footer.updated}</h4>
           <ul className="space-y-2">
             <li className="font-mono text-xs text-foreground/80">2026</li>
           </ul>
@@ -152,7 +154,7 @@ export function FooterSection() {
         className="mt-24 pt-8 border-t border-border/20 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
       >
         <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest">
-          © 2026 Arthur Jircik. All rights reserved.
+          {t.footer.copyright}
         </p>
       </div>
     </section>

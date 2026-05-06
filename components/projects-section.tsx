@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react"
 import { cn } from "@/lib/utils"
+import { useLanguage } from "@/lib/i18n/language-context"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
@@ -10,91 +11,59 @@ gsap.registerPlugin(ScrollTrigger)
 const INITIAL_PROJECTS_COUNT = 4
 const LOAD_MORE_INCREMENT = 2
 
-const experiments = [
-  {
-    title: "CalorieTracker API",
-    medium: "Backend",
-    description:
-      "API Back-end Desenvolvida em Spring Boot com PostgreSQL, usada para calcular calorias e macronutrientes de uma refeição criada pelo usuário por meio da API externa FatSecret.",
-    span: "col-span-2 row-span-2",
-    github: "https://github.com/jircik/CalorieTrackerAPI",
-    live: "https://calorietracker-api.jircik.dev/swagger-ui/index.html",
-  },
-  {
-    title: "URL Shortening Service",
-    medium: "Full-Stack",
-    description:
-      "Aplicação Full-Stack de encurtamento de URLs desenvolvido com Express.js, MongoDB e Next.js. Oferece autenticação JWT, shortcodes personalizados, expiração de links configurável, contagem de acessos e dashboard para controle de URLs.",
-    span: "col-span-1 row-span-1",
-    github: "https://github.com/jircik/URL-Shortening-Service",
-    live: "https://url-app.jircik.dev/",
-  },
-  {
-    title: "DataBase Backup CLI",
-    medium: "Backend",
-    description:
-        "Ferramenta CLI para backup e restore automatizado de bancos de dados. Desenvolvida com Java 21, Spring Boot, Spring Shell e Spring Batch. Suporte a PostgreSQL e MySQL.",
-    span: "col-span-1 row-span-1",
-    github: "https://github.com/jircik/DB-Backup-CLI",
-    live: null,
-  },
-  {
-    title: "Datagen CLI tool",
-    medium: "Backend",
-    description:
-      "CLI tool para popular bancos de dados com dados falsos e realistas, desenvolvida com Node.js, TypeScript e Faker.js. Suporta PostgreSQL e MongoDB. Conta com um plugin oficial para o Claude Code com skills especializadas para uso da ferramenta.",
-    span: "col-span-1 row-span-2",
-    github: "https://github.com/jircik/DataGen-Cli-Tool",
-    live: null,
-  },
-  {
-    title: "CryptoExchange API",
-    medium: "Backend",
-    description:
-      "API construída com NestJS para consultar valores de criptomoedas em tempo real via CoinGecko. O projeto está funcional, com novas funcionalidades planejadas para futuras versões.",
-    span: "col-span-1 row-span-1",
-    github: "https://github.com/jircik/CryptoExchange-API",
-    live: null,
-  },
-  {
-    title: "Discord GPT ChatBot",
-    medium: "Full-Stack",
-    description:
-      "Chatbot para Discord que utiliza modelos de IA via groq API. Desenvolvido em JavaScript e estruturado com Docker. Projeto hospedado em nuvem para qualquer pessoa poder adicionar o bot em seu servidor proprio.",
-    span: "col-span-2 row-span-1",
-    github: "https://github.com/jircik/DiscordChatBot",
-    live: "https://discord.com/oauth2/authorize?client_id=1474823195235451042&permissions=8&integration_type=0&scope=bot",
-  },
-  {
-    title: "Codificador de Imagens Binárias",
-    medium: "Systems",
-    description:
-      "Desenvolvido em C com execução via terminal, este projeto utiliza imagens binarias (PBM), aplicando recursivamente a divisão entre quadrantes para codificar a imagem em uma unica linha de texto.",
-    span: "col-span-1 row-span-1",
-    github: "https://github.com/jircik/Codificador-de-Imagens-Binarias-C",
-    live: null,
-  },
-  {
-    title: "Todo-list App",
-    medium: "Frontend",
-    description:
-      "Gerenciador de tarefas desenvolvido com JavaScript, HTML e CSS, focado em uma experiência de usuário fluida e visual moderno.",
-    span: "col-span-2 row-span-1",
-    github: "https://github.com/jircik/Todo-List-App",
-    live: "https://jircik-todo-list.netlify.app",
-  },
-  {
-    title: "Conversor de Bases Numéricas",
-    medium: "Backend",
-    description:
-      "Este projeto desenvolvido em Python realiza a conversão de números entre diferentes bases (binário, octal, decimal, hexadecimal) e utiliza um banco de dados SQL para armazenar conversões já calculadas.",
-    span: "col-span-1 row-span-1",
-    github: "https://github.com/jircik/Conversor-de-bases-numericas",
-    live: null,
-  },
-]
-
 export function ProjectsSection() {
+  const { t } = useLanguage()
+  const experiments = [
+    {
+      title: "CalorieTracker",
+      medium: "Full-Stack",
+      description: t.projects.items.calorieTracker,
+      span: "col-span-2 row-span-2",
+      github: "https://github.com/jircik/CalorieTracker-Backend",
+      live: "https://calorietracker.jircik.dev",
+    },
+    {
+      title: "URL Shortening Service",
+      medium: "Full-Stack",
+      description: t.projects.items.urlShortener,
+      span: "col-span-1 row-span-1",
+      github: "https://github.com/jircik/URL-Shortening-Service",
+      live: "https://url-app.jircik.dev/",
+    },
+    {
+      title: "DataBase Backup CLI",
+      medium: "Backend",
+      description: t.projects.items.dbBackup,
+      span: "col-span-1 row-span-1",
+      github: "https://github.com/jircik/DB-Backup-CLI",
+      live: null,
+    },
+    {
+      title: "Datagen CLI tool",
+      medium: "Backend",
+      description: t.projects.items.datagen,
+      span: "col-span-1 row-span-2",
+      github: "https://github.com/jircik/DataGen-Cli-Tool",
+      live: null,
+    },
+    {
+      title: "CryptoExchange API",
+      medium: "Backend",
+      description: t.projects.items.cryptoExchange,
+      span: "col-span-1 row-span-1",
+      github: "https://github.com/jircik/CryptoExchange-API",
+      live: null,
+    },
+    {
+      title: "Discord GPT ChatBot",
+      medium: "Full-Stack",
+      description: t.projects.items.discordBot,
+      span: "col-span-2 row-span-1",
+      github: "https://github.com/jircik/DiscordChatBot",
+      live: "https://discord.com/oauth2/authorize?client_id=1474823195235451042&permissions=8&integration_type=0&scope=bot",
+    },
+  ]
+
   const sectionRef = useRef<HTMLElement>(null)
   const headerRef = useRef<HTMLDivElement>(null)
   const listRef = useRef<HTMLDivElement>(null)
@@ -149,8 +118,8 @@ export function ProjectsSection() {
     <section ref={sectionRef} id="work" className="relative py-32 pl-6 md:pl-28 pr-6 md:pr-12">
       {/* Section header */}
       <div ref={headerRef} className="mb-16">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">02 / Projects</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">PROJETOS</h2>
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">{t.projects.label}</span>
+        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">{t.projects.title}</h2>
       </div>
 
       {/* Projects list */}
@@ -167,7 +136,7 @@ export function ProjectsSection() {
             onClick={() => setDisplayedCount((prev) => prev + LOAD_MORE_INCREMENT)}
             className="group inline-flex items-center gap-3 border border-foreground/20 px-6 py-3 font-mono text-xs uppercase tracking-widest text-foreground hover:border-accent hover:text-accent transition-all duration-200"
           >
-            Mostrar Mais Projetos
+            {t.projects.loadMore}
           </button>
         </div>
       )}

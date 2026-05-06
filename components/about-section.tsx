@@ -2,12 +2,14 @@
 
 import { useRef, useEffect } from "react"
 import { HighlightText } from "@/components/highlight-text"
+import { useLanguage } from "@/lib/i18n/language-context"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 gsap.registerPlugin(ScrollTrigger)
 
 export function AboutSection() {
+  const { t } = useLanguage()
   const sectionRef = useRef<HTMLElement>(null)
   const headerRef = useRef<HTMLDivElement>(null)
   const principlesRef = useRef<HTMLDivElement>(null)
@@ -16,19 +18,19 @@ export function AboutSection() {
     {
       number: "01",
       titleParts: [
-        { text: "SOBRE MIM", highlight: true },
+        { text: t.about.aboutTitle, highlight: true },
         { text: "", highlight: false },
       ],
-      description: "Engenheiro de Software Full-Stack (foco em backend) apaixonado por criar ferramentas de desenvolvimento e automação. Construo APIs, CLIs e sistemas full-stack — com preferência por arquitetura limpa e design bem pensado. Atualmente, estudo Engenharia de Software na FIAP. Sempre aprendendo, sempre construindo.",
+      description: t.about.aboutDescription,
       align: "left",
     },
     {
       number: "02",
       titleParts: [
-        { text: "EDUCAÇAO", highlight: true },
+        { text: t.about.educationTitle, highlight: true },
         { text: "", highlight: false },
       ],
-      description: "Cursando Bacharelado em Engenharia de Software na FIAP, São Paulo — com previsão de formação em dezembro de 2029, Aprendendo no momento fundamentos de desenvolvimento web, design de front-end e gestão de experiência total do software, além de edge computing, storytelling e empreendedorismo. Anteriormente (2025), completei um ano de Ciência da Computação na Universidade Mackenzie, onde construi uma base sólida em Lógica de Programação, Desenvolvimento em Python e C, Circuitos Elétricos e Eletrônicos e Análise de Dados.",
+      description: t.about.educationDescription,
       align: "right",
     },
   ]
@@ -75,7 +77,7 @@ export function AboutSection() {
     <section ref={sectionRef} id="principles" className="relative py-32 pl-6 md:pl-28 pr-6 md:pr-12">
       {/* Section header */}
       <div ref={headerRef} className="mb-24">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">03 / About </span>
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">{t.about.label}</span>
       </div>
 
       {/* Staggered principles */}

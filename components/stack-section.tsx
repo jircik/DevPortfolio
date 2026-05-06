@@ -2,35 +2,21 @@
 
 import { useRef, useEffect } from "react"
 import { cn } from "@/lib/utils"
+import { useLanguage } from "@/lib/i18n/language-context"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 gsap.registerPlugin(ScrollTrigger)
 
-const signals = [
-  {
-    date: "Back-end",
-    title: null,
-    note: "Java, Spring Boot, TypeScript, Node.js, Express, NestJS.",
-  },
-  {
-    date: "Front-end",
-    title: null,
-    note: "React, Next.js, Tailwind CSS.",
-  },
-  {
-    date: "DevOps & Tools",
-    title: null,
-    note: "N8N, Docker, Kubernetes, CI/CD, Git.",
-  },
-  {
-    date: "Databases",
-        title: null,
-    note: "PostgreSQL, MongoDB, PrismaORM.",
-  },
-]
-
 export function StackSection() {
+  const { t } = useLanguage()
+  const signals = [
+    { date: t.stack.categories.backend.name, title: null, note: t.stack.categories.backend.desc },
+    { date: t.stack.categories.frontend.name, title: null, note: t.stack.categories.frontend.desc },
+    { date: t.stack.categories.devops.name, title: null, note: t.stack.categories.devops.desc },
+    { date: t.stack.categories.database.name, title: null, note: t.stack.categories.database.desc },
+  ]
+
   const scrollRef = useRef<HTMLDivElement>(null)
   const sectionRef = useRef<HTMLElement>(null)
   const headerRef = useRef<HTMLDivElement>(null)
@@ -86,8 +72,8 @@ export function StackSection() {
 
       {/* Section header */}
       <div ref={headerRef} className="mb-16 pr-6 md:pr-12">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">01 / Skills</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">TECH STACK</h2>
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">{t.stack.label}</span>
+        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">{t.stack.title}</h2>
       </div>
 
       {/* Horizontal scroll container */}

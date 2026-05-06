@@ -2,16 +2,17 @@
 
 import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
-
-const navItems = [
-  { id: "hero", label: "home" },
-  { id: "signals", label: "Skills" },
-  { id: "work", label: "Projects" },
-  { id: "principles", label: "about-me" },
-  { id: "colophon", label: "Contact" },
-]
+import { useLanguage } from "@/lib/i18n/language-context"
 
 export function SideNav() {
+  const { t } = useLanguage()
+  const navItems = [
+    { id: "hero", label: t.nav.home },
+    { id: "signals", label: t.nav.skills },
+    { id: "work", label: t.nav.projects },
+    { id: "principles", label: t.nav.about },
+    { id: "colophon", label: t.nav.contact },
+  ]
   const [activeSection, setActiveSection] = useState("hero")
 
   useEffect(() => {
