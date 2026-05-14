@@ -44,15 +44,7 @@ export function ProjectsSection() {
       description: t.projects.items.datagen,
       span: "col-span-1 row-span-2",
       github: "https://github.com/jircik/DataGen-Cli-Tool",
-      live: null,
-    },
-    {
-      title: "CryptoExchange API",
-      medium: "Backend",
-      description: t.projects.items.cryptoExchange,
-      span: "col-span-1 row-span-1",
-      github: "https://github.com/jircik/CryptoExchange-API",
-      live: null,
+      live: "https://datagen.jircik.dev",
     },
     {
       title: "Discord GPT ChatBot",
