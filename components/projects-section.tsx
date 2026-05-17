@@ -36,7 +36,7 @@ export function ProjectsSection() {
       description: t.projects.items.dbBackup,
       span: "col-span-1 row-span-1",
       github: "https://github.com/jircik/DB-Backup-CLI",
-      live: null,
+      live: "https://db-backup.jircik.dev",
     },
     {
       title: "Datagen CLI tool",
