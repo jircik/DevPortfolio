@@ -15,12 +15,20 @@ export function ProjectsSection() {
   const { t } = useLanguage()
   const experiments = [
     {
-      title: "CalorieTracker",
+      title: "Calorie Tracker",
       medium: "Full-Stack",
       description: t.projects.items.calorieTracker,
       span: "col-span-2 row-span-2",
       github: "https://github.com/jircik/CalorieTracker-Backend",
       live: "https://calorietracker.jircik.dev",
+    },
+    {
+      title: "Crypto Arb",
+      medium: "Backend",
+      description: t.projects.items.cryptoArb,
+      span: "col-span-1 row-span-1",
+      github: "https://github.com/jircik/CryptoArb-MVP",
+      live: null,
     },
     {
       title: "URL Shortening Service",
@@ -31,20 +39,20 @@ export function ProjectsSection() {
       live: "https://url-app.jircik.dev/",
     },
     {
-      title: "DataBase Backup CLI",
-      medium: "Backend",
-      description: t.projects.items.dbBackup,
-      span: "col-span-1 row-span-1",
-      github: "https://github.com/jircik/DB-Backup-CLI",
-      live: "https://db-backup.jircik.dev",
-    },
-    {
       title: "Datagen CLI tool",
       medium: "Backend",
       description: t.projects.items.datagen,
       span: "col-span-1 row-span-2",
       github: "https://github.com/jircik/DataGen-Cli-Tool",
       live: "https://datagen.jircik.dev",
+    },
+    {
+      title: "DataBase Backup CLI",
+      medium: "Backend",
+      description: t.projects.items.dbBackup,
+      span: "col-span-1 row-span-1",
+      github: "https://github.com/jircik/DB-Backup-CLI",
+      live: "https://db-backup.jircik.dev",
     },
     {
       title: "Discord GPT ChatBot",

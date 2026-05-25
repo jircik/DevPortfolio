@@ -45,6 +45,8 @@ export const translations = {
           "API construída com NestJS para consultar valores de criptomoedas em tempo real via CoinGecko. O projeto está funcional, com novas funcionalidades planejadas para futuras versões.",
         discordBot:
           "Chatbot para Discord que utiliza modelos de IA via groq API. Desenvolvido em JavaScript e estruturado com Docker. Projeto hospedado em nuvem para qualquer pessoa poder adicionar o bot em seu servidor proprio.",
+        cryptoArb:
+          "Detector de arbitragem de criptomoedas em tempo real que monitora discrepâncias de preço entre diferentes corretoras via WebSocket. Construído com Node.js, TypeScript e Prisma + SQLite, com notificações duplas por e-mail (Nodemailer) e WhatsApp (Evolution API)."
       },
     },
     about: {
@@ -115,6 +117,8 @@ export const translations = {
           "API built with NestJS to fetch real-time cryptocurrency values via CoinGecko. The project is functional, with new features planned for future versions.",
         discordBot:
           "Discord chatbot using AI models via the groq API. Built with JavaScript and structured with Docker. Hosted in the cloud so anyone can add the bot to their own server.",
+        cryptoArb:
+          "Real-time crypto arbitrage detector that monitors price discrepancies between different exchanges over WebSocket. Built with Node.js, TypeScript, and Prisma + SQLite, with dual notifications via email (Nodemailer) and WhatsApp (Evolution API).",
       },
     },
     about: {
