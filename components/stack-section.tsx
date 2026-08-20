@@ -35,15 +35,16 @@ const STACK_BANDS: { key: "backend" | "data" | "frontend" | "ai" | "infra"; item
       { name: "SQL" },
       { name: "MongoDB" },
       { name: "Prisma" },
+      { name: "Redis" },
     ],
   },
   {
     key: "frontend",
     items: [
       { name: "React", prod: true },
+      { name: "Next.js" },
       { name: "Tailwind CSS", prod: true },
       { name: "shadcn/ui", prod: true },
-      { name: "Next.js" },
     ],
   },
   {
@@ -52,6 +53,7 @@ const STACK_BANDS: { key: "backend" | "data" | "frontend" | "ai" | "infra"; item
       { name: "n8n", prod: true },
       { name: "Groq / OpenAI", prod: true },
       { name: "WhatsApp API", prod: true },
+      { name: "Claude"},
     ],
   },
   {
@@ -60,8 +62,10 @@ const STACK_BANDS: { key: "backend" | "data" | "frontend" | "ai" | "infra"; item
       { name: "Cloudflare Workers", prod: true },
       { name: "Docker" },
       { name: "CI/CD" },
+      { name: "Railway" },
       { name: "Git" },
       { name: "Vitest" },
+      { name: "Linux" },
     ],
   },
 ]

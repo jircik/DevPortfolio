@@ -18,6 +18,7 @@ export function ProjectsSection() {
       title: "Calorie Tracker",
       medium: "Full-Stack",
       description: t.projects.items.calorieTracker,
+      stack: ["Java", "Spring Boot", "PostgreSQL", "Next.js"],
       span: "col-span-2 row-span-2",
       github: "https://github.com/jircik/CalorieTracker-Backend",
       live: "https://calorietracker.jircik.dev",
@@ -26,6 +27,7 @@ export function ProjectsSection() {
       title: "Crypto Arb",
       medium: "Backend",
       description: t.projects.items.cryptoArb,
+      stack: ["Node.js", "TypeScript", "WebSocket", "Prisma"],
       span: "col-span-1 row-span-1",
       github: "https://github.com/jircik/CryptoArb-MVP",
       live: null,
@@ -34,6 +36,7 @@ export function ProjectsSection() {
       title: "URL Shortening Service",
       medium: "Full-Stack",
       description: t.projects.items.urlShortener,
+      stack: ["Express.js", "MongoDB", "Next.js"],
       span: "col-span-1 row-span-1",
       github: "https://github.com/jircik/URL-Shortening-Service",
       live: "https://url-app.jircik.dev/",
@@ -42,6 +45,7 @@ export function ProjectsSection() {
       title: "Datagen CLI tool",
       medium: "Backend",
       description: t.projects.items.datagen,
+      stack: ["Node.js", "TypeScript", "Faker.js", "PostgreSQL"],
       span: "col-span-1 row-span-2",
       github: "https://github.com/jircik/DataGen-Cli-Tool",
       live: "https://datagen.jircik.dev",
@@ -50,14 +54,34 @@ export function ProjectsSection() {
       title: "DataBase Backup CLI",
       medium: "Backend",
       description: t.projects.items.dbBackup,
+      stack: ["Java 21", "Spring Boot", "Spring Shell", "Spring Batch"],
       span: "col-span-1 row-span-1",
       github: "https://github.com/jircik/DB-Backup-CLI",
       live: "https://db-backup.jircik.dev",
     },
     {
+      title: "Leads scanner",
+      medium: "Backend",
+      description: t.projects.items.leadsScanner,
+      stack: ["JavaScript", "Node.js", "Google places API"],
+      span: "col-span-1 row-span-1",
+      github: "https://github.com/jircik/leads-script",
+      live: null,
+    },
+    {
+      title: "Harbr",
+      medium: "Backend",
+      description: t.projects.items.harbr,
+      stack: ["TypeScript", "Node.js", "Linux"],
+      span: "col-span-1 row-span-1",
+      github: "https://github.com/jircik/Harbr",
+      live: null,
+    },
+    {
       title: "Discord GPT ChatBot",
       medium: "Full-Stack",
       description: t.projects.items.discordBot,
+      stack: ["JavaScript", "Groq API", "Docker"],
       span: "col-span-2 row-span-1",
       github: "https://github.com/jircik/DiscordChatBot",
       live: "https://discord.com/oauth2/authorize?client_id=1474823195235451042&permissions=8&integration_type=0&scope=bot",
@@ -152,6 +176,7 @@ function WorkCard({
     title: string
     medium: string
     description: string
+    stack: string[]
     span: string
     github?: string
     live?: string | null
@@ -165,7 +190,8 @@ function WorkCard({
     <article
       ref={cardRef}
       className={cn(
-        "group relative border border-border/40 px-6 py-6 flex items-start justify-between transition-all duration-300 cursor-pointer overflow-hidden",
+        "group relative border border-border/40 px-6 py-6 flex flex-col gap-5 transition-all duration-300 cursor-pointer overflow-hidden",
+        "md:flex-row md:items-start md:justify-between md:gap-6",
         isHovered && "border-accent/60",
       )}
       onMouseEnter={() => setIsHovered(true)}
@@ -180,23 +206,33 @@ function WorkCard({
       />
 
       {/* Content - Left side */}
-      <div className="relative z-10 flex-1">
+      <div className="relative z-10 md:flex-1">
         <h3 className={cn("font-[var(--font-bebas)] text-3xl md:text-4xl tracking-tight transition-colors duration-300", isHovered ? "text-accent" : "text-foreground")}>
           {experiment.title}
         </h3>
         <p className="mt-3 font-mono text-xs text-muted-foreground leading-relaxed max-w-2xl">
           {experiment.description}
         </p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {experiment.stack.map((tech) => (
+            <span
+              key={tech}
+              className="border border-border/60 px-2.5 py-1 font-mono text-[10px] text-muted-foreground"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* Action buttons - Right side */}
-      <div className="relative z-10 flex items-center gap-3 ml-6 flex-shrink-0">
+      <div className="relative z-10 flex items-center gap-3 md:ml-6 md:flex-shrink-0">
         {experiment.github && (
           <a
             href={experiment.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-4 py-2 border border-foreground/40 hover:border-accent hover:text-accent transition-all duration-200 font-mono text-xs uppercase tracking-widest"
+            className="inline-flex flex-1 items-center justify-center px-4 py-3.5 border border-foreground/40 hover:border-accent hover:text-accent transition-all duration-200 font-mono text-xs uppercase tracking-widest md:flex-none md:py-2"
             aria-label="View on GitHub"
           >
             GitHub
@@ -207,7 +243,7 @@ function WorkCard({
             href={experiment.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-4 py-2 border border-foreground/40 hover:border-accent hover:text-accent transition-all duration-200 font-mono text-xs uppercase tracking-widest"
+            className="inline-flex flex-1 items-center justify-center px-4 py-3.5 border border-foreground/40 hover:border-accent hover:text-accent transition-all duration-200 font-mono text-xs uppercase tracking-widest md:flex-none md:py-2"
             aria-label="View Live"
           >
             Live

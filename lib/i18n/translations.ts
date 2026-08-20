@@ -56,19 +56,23 @@ export const translations = {
       loadMore: "Mostrar Mais Projetos",
       items: {
         calorieTracker:
-          "Aplicação Full-Stack de Nutrição desenvolvida com Java e Spring Boot + PostgreSQL para o Backend (Railway) e Next.js para o Frontend (Cloudflare Pages), aplicação conta com autenticação JWT, calculo de macros e calorias de refeiçoes criadas pelo usuario por meio da API externa da FatSecret, além de consumo diario de agua e metas estabelecidas pelo usuario ",
+          "Rastreador de nutrição com autenticação JWT. Calcula macros e calorias das refeições pela API da FatSecret e acompanha metas diárias de água.",
         urlShortener:
-          "Aplicação Full-Stack de encurtamento de URLs desenvolvido com Express.js, MongoDB e Next.js. Oferece autenticação JWT, shortcodes personalizados, expiração de links configurável, contagem de acessos e dashboard para controle de URLs.",
+          "Encurtador de URLs com shortcodes personalizados, expiração configurável, contagem de acessos e dashboard de controle.",
         dbBackup:
-          "Ferramenta CLI para backup e restore automatizado de bancos de dados. Desenvolvida com Java 21, Spring Boot, Spring Shell e Spring Batch. Suporte a PostgreSQL e MySQL.",
+          "Backup e restore automatizado de bancos por linha de comando. Suporta PostgreSQL e MySQL.",
         datagen:
-          "CLI tool para popular bancos de dados com dados falsos e realistas, desenvolvida com Node.js, TypeScript e Faker.js. Suporta PostgreSQL e MongoDB. Conta com um plugin oficial para o Claude Code com skills especializadas para uso da ferramenta.",
+          "Popula bancos de dados com dados falsos realistas. Tem plugin oficial para o Claude Code, com skills próprias para operar a ferramenta.",
         cryptoExchange:
-          "API construída com NestJS para consultar valores de criptomoedas em tempo real via CoinGecko. O projeto está funcional, com novas funcionalidades planejadas para futuras versões.",
+          "API de cotações de criptomoedas em tempo real via CoinGecko.",
         discordBot:
-          "Chatbot para Discord que utiliza modelos de IA via groq API. Desenvolvido em JavaScript e estruturado com Docker. Projeto hospedado em nuvem para qualquer pessoa poder adicionar o bot em seu servidor proprio.",
+          "Chatbot de Discord com modelos de IA. Hospedado na nuvem: qualquer pessoa adiciona no próprio servidor.",
         cryptoArb:
-          "Detector de arbitragem de criptomoedas em tempo real que monitora discrepâncias de preço entre diferentes corretoras via WebSocket. Construído com Node.js, TypeScript e Prisma + SQLite, com notificações duplas por e-mail (Nodemailer) e WhatsApp (Evolution API)."
+          "Monitora discrepância de preço entre corretoras por WebSocket e avisa a arbitragem por e-mail e WhatsApp.",
+        leadsScanner:
+          "Script gerador de leads que busca empresas sem site, integrado à API do Google Places.",
+        harbr:
+          "CLI que verifica as portas em uso na sua máquina e abre uma dashboard para um melhor controle do seu sistema.",
       },
     },
     about: {
@@ -168,19 +172,23 @@ export const translations = {
       loadMore: "Show More Projects",
       items: {
         calorieTracker:
-          "Full-Stack nutrition app built with Java and Spring Boot + PostgreSQL for the backend (Railway) and Next.js for the frontend (Cloudflare Pages). Features JWT authentication, macro and calorie calculation for user-created meals via the external FatSecret API, plus daily water intake tracking and user-defined goals.",
+          "Nutrition tracker with JWT auth. Calculates meal macros and calories through the FatSecret API and tracks daily water goals.",
         urlShortener:
-          "Full-Stack URL shortening app built with Express.js, MongoDB, and Next.js. Offers JWT authentication, custom shortcodes, configurable link expiration, access counting, and a dashboard for URL management.",
+          "URL shortener with custom shortcodes, configurable expiration, access counting, and a management dashboard.",
         dbBackup:
-          "CLI tool for automated database backup and restore. Built with Java 21, Spring Boot, Spring Shell, and Spring Batch. Supports PostgreSQL and MySQL.",
+          "Automated database backup and restore from the command line. Supports PostgreSQL and MySQL.",
         datagen:
-          "CLI tool to populate databases with realistic fake data, built with Node.js, TypeScript, and Faker.js. Supports PostgreSQL and MongoDB. Comes with an official Claude Code plugin with specialized skills for using the tool.",
+          "Fills databases with realistic fake data. Ships with an official Claude Code plugin and its own skills for driving the tool.",
         cryptoExchange:
-          "API built with NestJS to fetch real-time cryptocurrency values via CoinGecko. The project is functional, with new features planned for future versions.",
+          "Real-time cryptocurrency quote API backed by CoinGecko.",
         discordBot:
-          "Discord chatbot using AI models via the groq API. Built with JavaScript and structured with Docker. Hosted in the cloud so anyone can add the bot to their own server.",
+          "Discord chatbot running AI models. Cloud-hosted, so anyone can add it to their own server.",
         cryptoArb:
-          "Real-time crypto arbitrage detector that monitors price discrepancies between different exchanges over WebSocket. Built with Node.js, TypeScript, and Prisma + SQLite, with dual notifications via email (Nodemailer) and WhatsApp (Evolution API).",
+          "Watches price gaps between exchanges over WebSocket and reports arbitrage by email and WhatsApp.",
+        leadsScanner:
+          "Leads Generator Script that looks for business without website integrated with the Google Places API",
+        harbr:
+         "CLI tool that scans used ports on your machine and opens a clean dashboard for better control over your machine",
       },
     },
     about: {
