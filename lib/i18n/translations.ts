@@ -4,33 +4,55 @@ export const translations = {
   pt: {
     nav: {
       home: "home",
+      venture: "venture",
       skills: "Skills",
       projects: "Projects",
       about: "about-me",
       contact: "Contact",
     },
     hero: {
-      role: "Engenheiro de Software FullStack",
+      role: "Engenheiro de Software & Fundador",
       location: "São Paulo, Brasil 🇧🇷.",
-      tagline: "Construção de sistemas completos escaláveis prontos para produção e automações.",
+      tagline: "Fundador técnico do SympleCrm - CRM em produção para corretoras. Construo sistemas completos, escaláveis e prontos para produção.",
       seeProjects: "Ver Projetos",
       knowMore: "Me conheça melhor",
       portfolio: "Portfolio / 2026",
       tooltips: { github: "GitHub", linkedin: "LinkedIn", cv: "Download CV" },
     },
+    venture: {
+      label: "01 / Venture",
+      title: "SYMPLE CRM",
+      kicker: "CRM nichado para corretoras de seguros e consórcio",
+      productLabel: "O produto",
+      roleLabel: "Meu papel",
+      role:
+        "Sou o fundador técnico, lido individualmente com Arquitetura, produto, desenvolvimento, banco de dados, automações e infraestrutura completa.",
+      description:
+        "Os leads chegam pelo WhatsApp e caem num funil onde a IA pré-qualifica, responde e dispara follow-ups sozinha. Em volta disso: chat, hierarquia de equipe multi-tenant, calculadoras de financiamento e consórcio, agenda e dashboard de métricas.",
+      metrics: {
+        brokerages: "Corretoras",
+        activeUsers: "Usuários ativos",
+        since: "Em produção desde",
+      },
+      stackLabel: "Stack em produção",
+      cta: "Ver produto",
+    },
     stack: {
-      label: "01 / Skills",
-      title: "TECH STACK",
-      categories: {
-        backend: { name: "Back-end", desc: "Java, Spring Boot, TypeScript, Node.js, Express, NestJS." },
-        frontend: { name: "Front-end", desc: "React, Next.js, Tailwind CSS." },
-        devops: { name: "DevOps & Tools", desc: "N8N, Docker, Kubernetes, CI/CD, Git." },
-        database: { name: "Databases", desc: "PostgreSQL, MongoDB, PrismaORM." },
+      label: "02 / Stack",
+      title: "O QUE EU CONSTRUO",
+      legend: "stack do SympleCrm",
+      bands: {
+        backend: "Back-end & APIs",
+        data: "Dados",
+        frontend: "Front-end",
+        ai: "IA & Automação",
+        infra: "Infra & Deploy",
       },
     },
     projects: {
-      label: "02 / Projects",
+      label: "03 / Projects",
       title: "PROJETOS",
+      subtitle: "Engenharia e projetos paralelos. O produto principal está acima.",
       loadMore: "Mostrar Mais Projetos",
       items: {
         calorieTracker:
@@ -50,16 +72,34 @@ export const translations = {
       },
     },
     about: {
-      label: "03 / About",
-      aboutTitle: "SOBRE MIM",
-      aboutDescription:
-        "Engenheiro de Software Full-Stack (foco em backend) apaixonado por criar ferramentas de desenvolvimento e sistemas completos e escaláveis. Construo APIs, CLIs e sistemas full-stack — com preferência por arquitetura limpa e design bem pensado. Atualmente, estudo Engenharia de Software na FIAP. Sempre aprendendo, sempre construindo.",
-      educationTitle: "EDUCAÇAO",
-      educationDescription:
-        "Cursando Bacharelado em Engenharia de Software na FIAP, São Paulo — com previsão de formação em dezembro de 2029, Aprendendo no momento fundamentos de desenvolvimento web, design de front-end e gestão de experiência total do software, além de edge computing, storytelling e empreendedorismo. Anteriormente (2025), completei um ano de Ciência da Computação na Universidade Mackenzie, onde construi uma base sólida em Lógica de Programação, Desenvolvimento em Python e C, Circuitos Elétricos e Eletrônicos e Análise de Dados.",
+      label: "04 / About",
+      title: "SOBRE MIM",
+      timelineLabel: "Trajetória",
+      intro:
+        "Gosto de entender o problema inteiro antes de escrever a primeira linha: do schema até o deploy. Prefiro arquitetura limpa a solução esperta, e ferramenta bem acabada a mais uma feature.",
+      intro2:
+        "Aprendi pondo a mão na massa. Passei um bom tempo construindo CLIs, APIs e aplicações full-stack por conta própria, cada uma resolvendo um problema que eu tinha de verdade. Quebrar e consertar projeto meu me ensinou mais sobre arquitetura, banco e deploy do que qualquer matéria da faculdade. Foi essa base que deixou o SympleCrm possível.",
+      timeline: {
+        mackenzie: {
+          what: "Ciência da Computação · Mackenzie",
+          note: "Um ano. Lógica de programação, Python, C e análise de dados. A base que ainda sustenta tudo.",
+        },
+        fiap: {
+          what: "Engenharia de Software · FIAP",
+          note: "Transferência. Formatura prevista para dezembro de 2029.",
+        },
+        tools: {
+          what: "Ferramentas e sistemas próprios",
+          note: "CLIs publicadas, APIs e aplicações full-stack em produção. Datagen, DB-Backup, CalorieTracker.",
+        },
+        symplecrm: {
+          what: "SympleCrm · fundador técnico",
+          note: "Primeiro cliente pagante. Arquitetura, produto, banco, automações e infraestrutura inteiramente minhas.",
+        },
+      },
     },
     footer: {
-      label: "04 / Connect",
+      label: "05 / Connect",
       title: "CONTATO",
       email: "Email",
       social: "Social",
@@ -68,7 +108,7 @@ export const translations = {
       locationCountry: "Brasil",
       status: "Status",
       availability: "Disponibilidade",
-      available: "Disponivel agora",
+      available: "Construindo o SympleCrm · aberto a oportunidades",
       updated: "Updated",
       copyright: "© 2026 Arthur Jircik. All rights reserved.",
     },
@@ -76,33 +116,55 @@ export const translations = {
   en: {
     nav: {
       home: "home",
+      venture: "venture",
       skills: "Skills",
       projects: "Projects",
       about: "about-me",
       contact: "Contact",
     },
     hero: {
-      role: "FullStack Software Engineer",
+      role: "Software Engineer & Founder",
       location: "São Paulo, Brazil 🇧🇷.",
-      tagline: "Building complete, scalable, production-ready systems and automations.",
+      tagline: "Technical founder of SympleCrm - a CRM running in production for insurance brokerages. I build complete, scalable, production-ready systems.",
       seeProjects: "See Projects",
       knowMore: "Get to know me",
       portfolio: "Portfolio / 2026",
       tooltips: { github: "GitHub", linkedin: "LinkedIn", cv: "Download CV" },
     },
+    venture: {
+      label: "01 / Venture",
+      title: "SYMPLEC RM",
+      kicker: "A niche CRM for insurance and consortium brokerages",
+      productLabel: "The product",
+      roleLabel: "My role",
+      role:
+        "I am the technical founder, I deal with Architecture, product, development, database, automations, and full infrastructure.",
+      description:
+        "Leads arrive over WhatsApp and land in a pipeline where AI pre-qualifies them, replies, and fires follow-ups on its own. Around it: scheduling, a multi-tenant team hierarchy, financing and consortium calculators with PDF export, and a metrics dashboard.",
+      metrics: {
+        brokerages: "Brokerages",
+        activeUsers: "Active users",
+        since: "In production since",
+      },
+      stackLabel: "Production stack",
+      cta: "View product",
+    },
     stack: {
-      label: "01 / Skills",
-      title: "TECH STACK",
-      categories: {
-        backend: { name: "Back-end", desc: "Java, Spring Boot, TypeScript, Node.js, Express, NestJS." },
-        frontend: { name: "Front-end", desc: "React, Next.js, Tailwind CSS." },
-        devops: { name: "DevOps & Tools", desc: "N8N, Docker, Kubernetes, CI/CD, Git." },
-        database: { name: "Databases", desc: "PostgreSQL, MongoDB, PrismaORM." },
+      label: "02 / Stack",
+      title: "WHAT I BUILD",
+      legend: "SympleCrm stack",
+      bands: {
+        backend: "Back-end & APIs",
+        data: "Data",
+        frontend: "Front-end",
+        ai: "AI & Automation",
+        infra: "Infra & Deploy",
       },
     },
     projects: {
-      label: "02 / Projects",
+      label: "03 / Projects",
       title: "PROJECTS",
+      subtitle: "Engineering work and side projects. The main product is above.",
       loadMore: "Show More Projects",
       items: {
         calorieTracker:
@@ -122,16 +184,34 @@ export const translations = {
       },
     },
     about: {
-      label: "03 / About",
-      aboutTitle: "ABOUT ME",
-      aboutDescription:
-        "Full-Stack Software Engineer (backend-focused) passionate about building developer tools and complete scalable systems. I build APIs, CLIs, and full-stack systems — with a preference for clean architecture and thoughtful design. Currently studying Software Engineering at FIAP. Always learning, always building.",
-      educationTitle: "EDUCATION",
-      educationDescription:
-        "Pursuing a Bachelor's in Software Engineering at FIAP, São Paulo — expected to graduate in December 2029. Currently learning the fundamentals of web development, front-end design, and total software experience management, as well as edge computing, storytelling, and entrepreneurship. Previously (2025), I completed a year of Computer Science at Mackenzie University, where I built a solid foundation in Programming Logic, Python and C development, Electrical and Electronic Circuits, and Data Analysis.",
+      label: "04 / About",
+      title: "ABOUT ME",
+      timelineLabel: "Trajectory",
+      intro:
+        "I like to understand the whole problem before writing the first line: from schema to deploy. I prefer clean architecture over clever fixes, and a well-finished tool over one more feature.",
+      intro2:
+        "I learned by getting my hands dirty. I spent a long stretch building CLIs, APIs, and full-stack apps on my own, each one solving a problem I actually had. Breaking and fixing my own projects taught me more about architecture, databases, and deployment than any class did. That foundation is what made SympleCrm possible.",
+      timeline: {
+        mackenzie: {
+          what: "Computer Science · Mackenzie",
+          note: "One year. Programming logic, Python, C, and data analysis. The foundation everything still rests on.",
+        },
+        fiap: {
+          what: "Software Engineering · FIAP",
+          note: "Transferred. Expected to graduate in December 2029.",
+        },
+        tools: {
+          what: "Tools and systems of my own",
+          note: "Published CLIs, APIs, and full-stack apps in production. Datagen, DB-Backup, CalorieTracker.",
+        },
+        symplecrm: {
+          what: "SympleCrm · technical founder",
+          note: "First paying customer. Architecture, product, database, automations, and infrastructure entirely mine.",
+        },
+      },
     },
     footer: {
-      label: "04 / Connect",
+      label: "05 / Connect",
       title: "CONTACT",
       email: "Email",
       social: "Social",
@@ -140,7 +220,7 @@ export const translations = {
       locationCountry: "Brazil",
       status: "Status",
       availability: "Availability",
-      available: "Available now",
+      available: "Building SympleCrm · open to opportunities",
       updated: "Updated",
       copyright: "© 2026 Arthur Jircik. All rights reserved.",
     },

@@ -20,7 +20,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-bebas" })
 
 export const metadata: Metadata = {
-  title: "Arthur Jircik — Fullstack Software Engineer",
+  title: "Arthur Jircik | Software Engineer & Founder",
   description:
     "Fullstack software engineer from São Paulo, Brasil. Specializing in building scalable systems and elegant interfaces.",
   generator: "v0.app",

@@ -2,8 +2,8 @@
 
 import { useEffect, useRef } from "react"
 import { ScrambleTextOnHover } from "@/components/scramble-text"
-import { AnimatedNoise } from "@/components/animated-noise"
 import { BitmapChevron } from "@/components/bitmap-chevron"
+import { DitherGradient } from "@/components/dither-gradient"
 import { useLanguage } from "@/lib/i18n/language-context"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
@@ -36,9 +36,10 @@ export function HeroSection() {
 
   return (
     <section ref={sectionRef} id="hero" className="relative min-h-screen flex items-center pl-6 md:pl-28 pr-6 md:pr-12">
-      <AnimatedNoise opacity={0.03} />
+      <DitherGradient opacity={0.4} />
+
       {/* Main content */}
-      <div ref={contentRef} className="flex-1 w-full">
+      <div ref={contentRef} className="relative z-10 flex-1 w-full">
         <h1 className="font-[var(--font-bebas)] text-[clamp(3rem,12vw,15rem)] leading-none tracking-tight">
           ARTHUR JIRCIK
         </h1>
@@ -136,7 +137,7 @@ export function HeroSection() {
 
       {/* Floating info tag */}
       <div className="absolute bottom-8 right-8 md:bottom-12 md:right-12">
-        <div className="border border-border px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+        <div className="border border-border bg-background/80 backdrop-blur-sm px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
           {t.hero.portfolio}
         </div>
       </div>
