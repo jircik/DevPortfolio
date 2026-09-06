@@ -60,15 +60,6 @@ export function ProjectsSection() {
       live: "https://db-backup.jircik.dev",
     },
     {
-      title: "Leads scanner",
-      medium: "Backend",
-      description: t.projects.items.leadsScanner,
-      stack: ["JavaScript", "Node.js", "Google places API"],
-      span: "col-span-1 row-span-1",
-      github: "https://github.com/jircik/leads-script",
-      live: null,
-    },
-    {
       title: "Harbr",
       medium: "Backend",
       description: t.projects.items.harbr,

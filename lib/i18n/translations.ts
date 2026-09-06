@@ -69,8 +69,6 @@ export const translations = {
           "Chatbot de Discord com modelos de IA. Hospedado na nuvem: qualquer pessoa adiciona no próprio servidor.",
         cryptoArb:
           "Monitora discrepância de preço entre corretoras por WebSocket e avisa a arbitragem por e-mail e WhatsApp.",
-        leadsScanner:
-          "Script gerador de leads que busca empresas sem site, integrado à API do Google Places.",
         harbr:
           "CLI que verifica as portas em uso na sua máquina e abre uma dashboard para um melhor controle do seu sistema.",
       },
@@ -185,8 +183,6 @@ export const translations = {
           "Discord chatbot running AI models. Cloud-hosted, so anyone can add it to their own server.",
         cryptoArb:
           "Watches price gaps between exchanges over WebSocket and reports arbitrage by email and WhatsApp.",
-        leadsScanner:
-          "Leads Generator Script that looks for business without website integrated with the Google Places API",
         harbr:
          "CLI tool that scans used ports on your machine and opens a clean dashboard for better control over your machine",
       },
