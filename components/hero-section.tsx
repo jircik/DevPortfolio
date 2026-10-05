@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger)
 export function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null)
   const contentRef = useRef<HTMLDivElement>(null)
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
 
   useEffect(() => {
     if (!sectionRef.current || !contentRef.current) return
@@ -110,7 +110,7 @@ export function HeroSection() {
           </a>
 
           <a
-            href="/cv.pdf"
+            href={language === "en" ? "/cv-en.pdf" : "/cv.pdf"}
             download
             className="group relative flex items-center justify-center w-10 h-10 border border-foreground/20 hover:border-accent hover:bg-accent/10 transition-all duration-200"
             aria-label="Download CV"
