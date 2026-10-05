@@ -69,6 +69,8 @@ export const translations = {
           "Chatbot de Discord com modelos de IA. Hospedado na nuvem: qualquer pessoa adiciona no próprio servidor.",
         cryptoArb:
           "Monitora discrepância de preço entre corretoras por WebSocket e avisa a arbitragem por e-mail e WhatsApp.",
+        fiapJovi:
+          "Top 10 entre 120+ grupos no Challenge FIAP x JOVI Mobile, resolvendo um problema real da empresa em 4 sprints. App com câmera que transforma fotos de anotações em resumos, exercícios e simulados com IA (Gemini), e monta plano de estudo para as provas.",
         harbr:
           "CLI que verifica as portas em uso na sua máquina e abre uma dashboard para um melhor controle do seu sistema.",
       },
@@ -183,6 +185,8 @@ export const translations = {
           "Discord chatbot running AI models. Cloud-hosted, so anyone can add it to their own server.",
         cryptoArb:
           "Watches price gaps between exchanges over WebSocket and reports arbitrage by email and WhatsApp.",
+        fiapJovi:
+          "Top 10 out of 120+ teams in the FIAP x JOVI Mobile Challenge, solving a real problem posed by the company over 4 sprints. Camera-driven app that turns photos of notes into summaries, exercises, and practice tests with generative AI (Gemini), plus an exam study plan.",
         harbr:
          "CLI tool that scans used ports on your machine and opens a clean dashboard for better control over your machine",
       },

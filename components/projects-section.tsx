@@ -24,6 +24,15 @@ export function ProjectsSection() {
       live: "https://calorietracker.jircik.dev",
     },
     {
+      title: "URL Shortening Service",
+      medium: "Full-Stack",
+      description: t.projects.items.urlShortener,
+      stack: ["Express.js", "MongoDB", "Next.js"],
+      span: "col-span-1 row-span-1",
+      github: "https://github.com/jircik/URL-Shortening-Service",
+      live: "https://url-app.jircik.dev/",
+    },
+    {
       title: "Crypto Arb",
       medium: "Backend",
       description: t.projects.items.cryptoArb,
@@ -33,13 +42,13 @@ export function ProjectsSection() {
       live: null,
     },
     {
-      title: "URL Shortening Service",
+      title: "App Estudos FIAP x JOVI Mobile",
       medium: "Full-Stack",
-      description: t.projects.items.urlShortener,
-      stack: ["Express.js", "MongoDB", "Next.js"],
+      description: t.projects.items.fiapJovi,
+      stack: ["Vite", "TypeScript", "Gemini API"],
       span: "col-span-1 row-span-1",
-      github: "https://github.com/jircik/URL-Shortening-Service",
-      live: "https://url-app.jircik.dev/",
+      github: "https://github.com/Pentacode-FIAP/App-Estudos-JOVI",
+      live: null,
     },
     {
       title: "Datagen CLI tool",
@@ -134,7 +143,7 @@ export function ProjectsSection() {
       {/* Section header */}
       <div ref={headerRef} className="mb-16">
         <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">{t.projects.label}</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">{t.projects.title}</h2>
+        <h2 className="mt-4 font-(--font-bebas) text-5xl md:text-7xl tracking-tight">{t.projects.title}</h2>
       </div>
 
       {/* Projects list */}
@@ -198,7 +207,7 @@ function WorkCard({
 
       {/* Content - Left side */}
       <div className="relative z-10 md:flex-1">
-        <h3 className={cn("font-[var(--font-bebas)] text-3xl md:text-4xl tracking-tight transition-colors duration-300", isHovered ? "text-accent" : "text-foreground")}>
+        <h3 className={cn("font-(--font-bebas) text-3xl md:text-4xl tracking-tight transition-colors duration-300", isHovered ? "text-accent" : "text-foreground")}>
           {experiment.title}
         </h3>
         <p className="mt-3 font-mono text-xs text-muted-foreground leading-relaxed max-w-2xl">
@@ -217,7 +226,7 @@ function WorkCard({
       </div>
 
       {/* Action buttons - Right side */}
-      <div className="relative z-10 flex items-center gap-3 md:ml-6 md:flex-shrink-0">
+      <div className="relative z-10 flex items-center gap-3 md:ml-6 md:shrink-0">
         {experiment.github && (
           <a
             href={experiment.github}
@@ -249,8 +258,8 @@ function WorkCard({
           isHovered ? "opacity-100" : "opacity-0",
         )}
       >
-        <div className="absolute top-0 right-0 w-full h-[1px] bg-accent" />
-        <div className="absolute top-0 right-0 w-[1px] h-full bg-accent" />
+        <div className="absolute top-0 right-0 w-full h-px bg-accent" />
+        <div className="absolute top-0 right-0 w-px h-full bg-accent" />
       </div>
     </article>
   )

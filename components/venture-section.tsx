@@ -100,7 +100,7 @@ export function VentureSection() {
       {/* Section header */}
       <div ref={headerRef} className="mb-12">
         <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">{t.venture.label}</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-6xl md:text-8xl lg:text-9xl tracking-tight leading-none">
+        <h2 className="mt-4 font-(--font-bebas) text-6xl md:text-8xl lg:text-9xl tracking-tight leading-none">
           {t.venture.title}
         </h2>
         <p className="mt-3 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
@@ -122,7 +122,7 @@ export function VentureSection() {
       <div ref={metricsRef} className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-px bg-border/40 border border-border/40">
         {metrics.map((metric) => (
           <div key={metric.label} data-metric className="bg-background px-6 py-8">
-            <div className="font-[var(--font-bebas)] text-4xl md:text-5xl tracking-tight text-accent leading-none">
+            <div className="font-(--font-bebas) text-4xl md:text-5xl tracking-tight text-accent leading-none">
               {metric.value}
             </div>
             <div className="mt-3 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
@@ -169,7 +169,7 @@ export function VentureSection() {
           className="group inline-flex items-center gap-3 border border-foreground/20 px-6 py-3 font-mono text-xs uppercase tracking-widest text-foreground hover:border-accent hover:text-accent transition-all duration-200"
         >
           <ScrambleTextOnHover text={t.venture.cta} as="span" duration={0.6} />
-          <BitmapChevron className="transition-transform duration-[400ms] ease-in-out group-hover:rotate-45" />
+          <BitmapChevron className="transition-transform duration-400 ease-in-out group-hover:rotate-45" />
         </a>
       </div>
     </section>

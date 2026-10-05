@@ -19,23 +19,10 @@ const STACK_BANDS: { key: "backend" | "data" | "frontend" | "ai" | "infra"; item
     key: "backend",
     items: [
       { name: "TypeScript", prod: true },
-      { name: "Java" },
       { name: "Node.js" },
       { name: "TanStack Start", prod: true },
+      { name: "Java" },
       { name: "Spring Boot" },
-      { name: "NestJS" },
-      { name: "Express" },
-    ],
-  },
-  {
-    key: "data",
-    items: [
-      { name: "PostgreSQL", prod: true },
-      { name: "Supabase · RLS, triggers, RPCs", prod: true },
-      { name: "SQL" },
-      { name: "MongoDB" },
-      { name: "Prisma" },
-      { name: "Redis" },
     ],
   },
   {
@@ -45,15 +32,27 @@ const STACK_BANDS: { key: "backend" | "data" | "frontend" | "ai" | "infra"; item
       { name: "Next.js" },
       { name: "Tailwind CSS", prod: true },
       { name: "shadcn/ui", prod: true },
+      { name: "Vite" },
+    ],
+  },
+  {
+    key: "data",
+    items: [
+      { name: "PostgreSQL", prod: true },
+      { name: "Supabase", prod: true },
+      { name: "MongoDB" },
+      { name: "Prisma" },
+      { name: "Redis" },
     ],
   },
   {
     key: "ai",
     items: [
       { name: "n8n", prod: true },
-      { name: "Groq / OpenAI", prod: true },
-      { name: "WhatsApp API", prod: true },
       { name: "Claude"},
+      { name: "Groq", prod: true },
+      { name: "WhatsApp API", prod: true },
+      { name: "OpenAI", prod: true },
     ],
   },
   {
@@ -61,15 +60,12 @@ const STACK_BANDS: { key: "backend" | "data" | "frontend" | "ai" | "infra"; item
     items: [
       { name: "Cloudflare Workers", prod: true },
       { name: "Docker" },
-      { name: "CI/CD" },
       { name: "Railway" },
       { name: "Git" },
-      { name: "Vitest" },
       { name: "Linux" },
     ],
   },
 ]
-// ---------------------------------------------------------------------------
 
 export function StackSection() {
   const { t } = useLanguage()
@@ -126,11 +122,11 @@ export function StackSection() {
       {/* Section header */}
       <div ref={headerRef} className="mb-10">
         <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">{t.stack.label}</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">{t.stack.title}</h2>
+        <h2 className="mt-4 font-(--font-bebas) text-5xl md:text-7xl tracking-tight">{t.stack.title}</h2>
 
         {/* Legend for the production marker */}
         <p className="mt-4 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-          <span className="inline-block h-[5px] w-[5px] bg-accent" aria-hidden="true" />
+          <span className="inline-block h-1.25 w-1.25 bg-accent" aria-hidden="true" />
           {t.stack.legend}
         </p>
       </div>
@@ -158,7 +154,7 @@ export function StackSection() {
                   )}
                 >
                   {tech.prod && (
-                    <span className="mr-2 inline-block h-[5px] w-[5px] bg-accent" aria-hidden="true" />
+                    <span className="mr-2 inline-block h-1.25 w-1.25 bg-accent" aria-hidden="true" />
                   )}
                   {tech.name}
                 </span>
