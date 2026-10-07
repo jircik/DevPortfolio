@@ -15,6 +15,15 @@ export function ProjectsSection() {
   const { t } = useLanguage()
   const experiments = [
     {
+      title: "Helix",
+      medium: "Full-Stack",
+      description: t.projects.items.helix,
+      stack: ["Next.js", "TypeScript", "SQLite", "Drizzle", "Better Auth", "Google Maps API"],
+      span: "col-span-2 row-span-2",
+      github: "https://github.com/jircik/helix",
+      live: "https://helix.jircik.dev",
+    },
+    {
       title: "Calorie Tracker",
       medium: "Full-Stack",
       description: t.projects.items.calorieTracker,
@@ -33,15 +42,6 @@ export function ProjectsSection() {
       live: "https://url-app.jircik.dev/",
     },
     {
-      title: "Crypto Arb",
-      medium: "Backend",
-      description: t.projects.items.cryptoArb,
-      stack: ["Node.js", "TypeScript", "WebSocket", "Prisma"],
-      span: "col-span-1 row-span-1",
-      github: "https://github.com/jircik/CryptoArb-MVP",
-      live: null,
-    },
-    {
       title: "App Estudos FIAP x JOVI Mobile",
       medium: "Full-Stack",
       description: t.projects.items.fiapJovi,
@@ -58,6 +58,15 @@ export function ProjectsSection() {
       span: "col-span-1 row-span-2",
       github: "https://github.com/jircik/DataGen-Cli-Tool",
       live: "https://datagen.jircik.dev",
+    },
+    {
+      title: "Crypto Arb",
+      medium: "Backend",
+      description: t.projects.items.cryptoArb,
+      stack: ["Node.js", "TypeScript", "WebSocket", "Prisma"],
+      span: "col-span-1 row-span-1",
+      github: "https://github.com/jircik/CryptoArb-MVP",
+      live: null,
     },
     {
       title: "DataBase Backup CLI",

@@ -55,6 +55,8 @@ export const translations = {
       subtitle: "Engenharia e projetos paralelos. O produto principal está acima.",
       loadMore: "Mostrar Mais Projetos",
       items: {
+        helix:
+          "CRM de prospecção que busca no Google Maps negócios sem site e acompanha o contato num pipeline. Better Auth, isolamento multi-tenant row-level e cota atômica em SQLite.",
         calorieTracker:
           "Rastreador de nutrição com autenticação JWT. Calcula macros e calorias das refeições pela API da FatSecret e acompanha metas diárias de água.",
         urlShortener:
@@ -171,6 +173,8 @@ export const translations = {
       subtitle: "Engineering work and side projects. The main product is above.",
       loadMore: "Show More Projects",
       items: {
+        helix:
+          "Prospecting CRM that finds businesses without a website on Google Maps and tracks outreach in a pipeline. Better Auth, row-level multi-tenant isolation, and atomic quota in SQLite.",
         calorieTracker:
           "Nutrition tracker with JWT auth. Calculates meal macros and calories through the FatSecret API and tracks daily water goals.",
         urlShortener:
