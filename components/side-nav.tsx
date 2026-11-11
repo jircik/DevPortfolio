@@ -8,7 +8,7 @@ export function SideNav() {
   const { t } = useLanguage()
   const navItems = [
     { id: "hero", label: t.nav.home },
-    { id: "venture", label: t.nav.venture },
+    { id: "experience", label: t.nav.experience },
     { id: "signals", label: t.nav.skills },
     { id: "work", label: t.nav.projects },
     { id: "principles", label: t.nav.about },

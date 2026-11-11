@@ -15,7 +15,7 @@ const TIMELINE: { key: "mackenzie" | "fiap" | "tools" | "symplecrm"; when: strin
   { key: "mackenzie", when: "2025" },
   { key: "fiap", when: "2026" },
   { key: "tools", when: "2026" },
-  { key: "symplecrm", when: "Jul 2026", current: true },
+  { key: "symplecrm", when: "Jul — Nov 2026" },
 ]
 // ---------------------------------------------------------------------------
 

@@ -4,38 +4,40 @@ export const translations = {
   pt: {
     nav: {
       home: "home",
-      venture: "venture",
+      experience: "experiência",
       skills: "Skills",
       projects: "Projects",
       about: "about-me",
       contact: "Contact",
     },
     hero: {
-      role: "Engenheiro de Software & Fundador",
+      role: "Engenheiro de Software",
       location: "São Paulo, Brasil 🇧🇷.",
-      tagline: "Fundador técnico do SympleCrm - CRM em produção para corretoras. Construo sistemas completos, escaláveis e prontos para produção.",
+      tagline: "Desenvolvedor full stack. Construí o SympleCrm, CRM SaaS que rodou em produção para corretoras. Construo sistemas completos, escaláveis e prontos para produção.",
       seeProjects: "Ver Projetos",
       knowMore: "Me conheça melhor",
       portfolio: "Portfolio / 2026",
       tooltips: { github: "GitHub", linkedin: "LinkedIn", cv: "Download CV" },
     },
-    venture: {
-      label: "01 / Venture",
-      title: "SYMPLE CRM",
-      kicker: "CRM nichado para corretoras de seguros e consórcio",
-      productLabel: "O produto",
-      roleLabel: "Meu papel",
-      role:
-        "Sou o fundador técnico, lido individualmente com Arquitetura, produto, desenvolvimento, banco de dados, automações e infraestrutura completa.",
-      description:
-        "Os leads chegam pelo WhatsApp e caem num funil onde a IA pré-qualifica, responde e dispara follow-ups sozinha. Em volta disso: chat, hierarquia de equipe multi-tenant, calculadoras de financiamento e consórcio, agenda e dashboard de métricas.",
-      metrics: {
-        brokerages: "Corretoras",
-        activeUsers: "Usuários ativos",
-        since: "Em produção desde",
+    experience: {
+      label: "01 / Experiência",
+      title: "EXPERIÊNCIA",
+      stackLabel: "Stack",
+      items: {
+        symplecrm: {
+          role: "Desenvolvedor Full Stack",
+          company: "SympleCrm",
+          kicker: "CRM SaaS para corretoras",
+          summary:
+            "Desenvolvi a plataforma de ponta a ponta e a coloquei em produção com corretoras usando no dia a dia. Os leads chegam pelo WhatsApp e caem num funil onde a IA pré-qualifica, responde e dispara follow-ups sozinha.",
+          highlights: [
+            { label: "Arquitetura", text: "TanStack Start, React 19 e TypeScript rodando em Cloudflare Workers." },
+            { label: "Dados", text: "Postgres multi-tenant no Supabase, com isolamento via RLS, triggers e RPCs." },
+            { label: "IA & automação", text: "n8n e LLMs (OpenAI / Groq) qualificando leads e fazendo follow-up no WhatsApp." },
+            { label: "Produto", text: "Hierarquia de equipe, chat, agenda, calculadoras de financiamento e consórcio e dashboard de métricas." },
+          ],
+        },
       },
-      stackLabel: "Stack em produção",
-      cta: "Ver produto",
     },
     stack: {
       label: "02 / Stack",
@@ -52,7 +54,7 @@ export const translations = {
     projects: {
       label: "03 / Projects",
       title: "PROJETOS",
-      subtitle: "Engenharia e projetos paralelos. O produto principal está acima.",
+      subtitle: "Engenharia e projetos paralelos.",
       loadMore: "Mostrar Mais Projetos",
       items: {
         helix:
@@ -99,8 +101,8 @@ export const translations = {
           note: "CLIs publicadas, APIs e aplicações full-stack em produção. Datagen, DB-Backup, CalorieTracker.",
         },
         symplecrm: {
-          what: "SympleCrm · fundador técnico",
-          note: "Primeiro cliente pagante. Arquitetura, produto, banco, automações e infraestrutura inteiramente minhas.",
+          what: "SympleCrm · desenvolvedor full stack",
+          note: "Primeira experiência com produto em produção e clientes pagantes. Arquitetura, banco, automações e infraestrutura.",
         },
       },
     },
@@ -114,7 +116,7 @@ export const translations = {
       locationCountry: "Brasil",
       status: "Status",
       availability: "Disponibilidade",
-      available: "Construindo o SympleCrm · aberto a oportunidades",
+      available: "Aberto a oportunidades",
       updated: "Updated",
       copyright: "© 2026 Arthur Jircik. All rights reserved.",
     },
@@ -122,38 +124,40 @@ export const translations = {
   en: {
     nav: {
       home: "home",
-      venture: "venture",
+      experience: "experience",
       skills: "Skills",
       projects: "Projects",
       about: "about-me",
       contact: "Contact",
     },
     hero: {
-      role: "Software Engineer & Founder",
+      role: "Software Engineer",
       location: "São Paulo, Brazil 🇧🇷.",
-      tagline: "Technical founder of SympleCrm - a CRM running in production for insurance brokerages. I build complete, scalable, production-ready systems.",
+      tagline: "Full stack developer. I built SympleCrm, a SaaS CRM that ran in production for insurance brokerages. I build complete, scalable, production-ready systems.",
       seeProjects: "See Projects",
       knowMore: "Get to know me",
       portfolio: "Portfolio / 2026",
       tooltips: { github: "GitHub", linkedin: "LinkedIn", cv: "Download CV" },
     },
-    venture: {
-      label: "01 / Venture",
-      title: "SYMPLEC RM",
-      kicker: "A niche CRM for insurance and consortium brokerages",
-      productLabel: "The product",
-      roleLabel: "My role",
-      role:
-        "I am the technical founder, I deal with Architecture, product, development, database, automations, and full infrastructure.",
-      description:
-        "Leads arrive over WhatsApp and land in a pipeline where AI pre-qualifies them, replies, and fires follow-ups on its own. Around it: scheduling, a multi-tenant team hierarchy, financing and consortium calculators with PDF export, and a metrics dashboard.",
-      metrics: {
-        brokerages: "Brokerages",
-        activeUsers: "Active users",
-        since: "In production since",
+    experience: {
+      label: "01 / Experience",
+      title: "EXPERIENCE",
+      stackLabel: "Stack",
+      items: {
+        symplecrm: {
+          role: "Full Stack Developer",
+          company: "SympleCrm",
+          kicker: "SaaS CRM for brokerages",
+          summary:
+            "Built the platform end to end and shipped it to production, with brokerages using it day to day. Leads arrive over WhatsApp and land in a pipeline where AI pre-qualifies them, replies, and fires follow-ups on its own.",
+          highlights: [
+            { label: "Architecture", text: "TanStack Start, React 19, and TypeScript running on Cloudflare Workers." },
+            { label: "Data", text: "Multi-tenant Postgres on Supabase, isolated through RLS, triggers, and RPCs." },
+            { label: "AI & automation", text: "n8n and LLMs (OpenAI / Groq) qualifying leads and following up over WhatsApp." },
+            { label: "Product", text: "Team hierarchy, chat, scheduling, financing and consortium calculators, and a metrics dashboard." },
+          ],
+        },
       },
-      stackLabel: "Production stack",
-      cta: "View product",
     },
     stack: {
       label: "02 / Stack",
@@ -170,7 +174,7 @@ export const translations = {
     projects: {
       label: "03 / Projects",
       title: "PROJECTS",
-      subtitle: "Engineering work and side projects. The main product is above.",
+      subtitle: "Engineering work and side projects.",
       loadMore: "Show More Projects",
       items: {
         helix:
@@ -217,8 +221,8 @@ export const translations = {
           note: "Published CLIs, APIs, and full-stack apps in production. Datagen, DB-Backup, CalorieTracker.",
         },
         symplecrm: {
-          what: "SympleCrm · technical founder",
-          note: "First paying customer. Architecture, product, database, automations, and infrastructure entirely mine.",
+          what: "SympleCrm · full stack developer",
+          note: "First experience with a product in production and paying customers. Architecture, database, automations, and infrastructure.",
         },
       },
     },
@@ -232,7 +236,7 @@ export const translations = {
       locationCountry: "Brazil",
       status: "Status",
       availability: "Availability",
-      available: "Building SympleCrm · open to opportunities",
+      available: "Open to opportunities",
       updated: "Updated",
       copyright: "© 2026 Arthur Jircik. All rights reserved.",
     },
